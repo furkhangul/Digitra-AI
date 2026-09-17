@@ -1,0 +1,7 @@
+İ: rr=[0, -30, 180] lr=[0, 0, 0] gap=[0.006, 0.283, 0.015] contact=-0.0000 worst=-0.0000 palm.x R-0.50 L+0.00
+M: no orientation satisfied every rule
+N: no orientation satisfied every rule
+S: no orientation satisfied every rule
+Ş: rr=[0, -30, -10] lr=[0, 0, 20] gap=[0.032, 0.217, -0.081] contact=-0.0000 worst=-0.0000 palm.x R-0.50 L+0.00
+Ü: rr=[0, 0, 85] lr=[0, 0, 0] gap=[0.045, 0.212, -0.088] contact=+0.0000 worst=+0.0000 palm.x R+0.00 L+0.00
+Z: no orientation satisfied every rule

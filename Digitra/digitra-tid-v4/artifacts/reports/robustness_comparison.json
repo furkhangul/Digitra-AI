@@ -1,0 +1,85 @@
+{
+  "checkpoint": "C:\\Users\\Furkan\\Desktop\\Digitra AI\\Digitra\\digitra-tid-v4\\artifacts\\models\\static_mobilenet_v3_large_robust.pt",
+  "test_samples": 431,
+  "protocol": {
+    "mirror": "horizontal reflection",
+    "far": "55% centered scale",
+    "near": "132% center zoom/crop",
+    "shifted_far": "66% scale placed off-center",
+    "low_light": "48% brightness with contrast shift"
+  },
+  "results": [
+    {
+      "model": "robust_cnn",
+      "variant": "clean",
+      "accuracy": 0.839907192575406,
+      "macro_f1": 0.8417563380253053
+    },
+    {
+      "model": "hog_v4",
+      "variant": "clean",
+      "accuracy": 0.7192575406032483,
+      "macro_f1": 0.7115094306604351
+    },
+    {
+      "model": "robust_cnn",
+      "variant": "mirror",
+      "accuracy": 0.839907192575406,
+      "macro_f1": 0.8422611400773501
+    },
+    {
+      "model": "hog_v4",
+      "variant": "mirror",
+      "accuracy": 0.4547563805104408,
+      "macro_f1": 0.4323223849186033
+    },
+    {
+      "model": "robust_cnn",
+      "variant": "far",
+      "accuracy": 0.7888631090487239,
+      "macro_f1": 0.7913142072623807
+    },
+    {
+      "model": "hog_v4",
+      "variant": "far",
+      "accuracy": 0.1368909512761021,
+      "macro_f1": 0.08000939680069863
+    },
+    {
+      "model": "robust_cnn",
+      "variant": "near",
+      "accuracy": 0.8352668213457076,
+      "macro_f1": 0.8338056143991455
+    },
+    {
+      "model": "hog_v4",
+      "variant": "near",
+      "accuracy": 0.5220417633410673,
+      "macro_f1": 0.5210537845384992
+    },
+    {
+      "model": "robust_cnn",
+      "variant": "shifted_far",
+      "accuracy": 0.8167053364269141,
+      "macro_f1": 0.8187224830226666
+    },
+    {
+      "model": "hog_v4",
+      "variant": "shifted_far",
+      "accuracy": 0.060324825986078884,
+      "macro_f1": 0.04375991428310096
+    },
+    {
+      "model": "robust_cnn",
+      "variant": "low_light",
+      "accuracy": 0.8538283062645011,
+      "macro_f1": 0.8521827343431351
+    },
+    {
+      "model": "hog_v4",
+      "variant": "low_light",
+      "accuracy": 0.7006960556844548,
+      "macro_f1": 0.687845783161671
+    }
+  ]
+}

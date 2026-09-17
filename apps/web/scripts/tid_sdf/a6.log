@@ -1,0 +1,7 @@
+right rot [0, 0, np.float64(84.8)]  left rot [np.float64(52.2), np.float64(-74.5), np.float64(-124.3)]
+spread +/-6.6  gap [0.001, -0.031, -0.238]
+touch near +0.0048 far +0.0048 ; crosses 0.45/0.45 ; front 0.23/0.24
+leg tip sep 0.50 ; bar reaches 0.80 ; fist-fist 1.48
+right x 0.08  left x -0.55 -> R on RIGHT ok
+overlap +0.0069
+rendered

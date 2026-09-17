@@ -1,0 +1,32 @@
+A   worst=-0.0005 at 1.333s
+B   worst=+0.0015 at 0s
+C   worst=+0.0055 at 0s
+Ç   worst=+0.0050 at 1.333s
+D   worst=+0.0071 at 0s
+E   worst=+0.0007 at 1.333s
+F   worst=-0.0162 at 1.333s
+G   worst=-0.0141 at 0s
+Ğ   worst=-0.0023 at 1.333s
+H   worst=-0.0011 at 1.333s
+I   worst=-0.0004 at 0s
+İ   worst=-0.0120 at 1.333s
+J   worst=-0.0098 at 0s
+K   worst=-0.0112 at 1.333s
+L   worst=-0.0097 at 0s
+M   worst=-0.0012 at 1.333s
+N   worst=-0.0018 at 1.333s
+O   worst=+0.0004 at 0s
+Ö   worst=+0.1110 at 1.333s
+P   worst=+0.1132 at 0s
+R   worst=+0.0020 at 1.333s
+S   worst=-0.0020 at 1.333s
+Ş   worst=-0.0000 at 0s
+T   worst=+0.0002 at 1.333s
+U   worst=+0.0020 at 0s
+Ü   worst=+0.0086 at 1.333s
+V   worst=+0.0109 at 0s
+Y   worst=+0.0054 at 1.333s
+Z   worst=+0.0023 at 1.333s
+
+collision <-0.03: NONE
+worst overall -0.0162

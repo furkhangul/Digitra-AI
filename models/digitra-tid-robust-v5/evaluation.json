@@ -1,0 +1,137 @@
+{
+  "selection": {
+    "format_version": 1,
+    "selection": "weight selected only on validation macro-F1",
+    "validation": {
+      "mobilenet_weight": 0.25,
+      "accuracy": 0.8867595818815331,
+      "macro_f1": 0.8785839791146569
+    },
+    "recommended_confidence": 0.28,
+    "validation_selective_metrics": {
+      "threshold": 0.28,
+      "coverage": 0.9790940766550522,
+      "accepted_accuracy": 0.900355871886121
+    },
+    "members": [
+      {
+        "checkpoint": "static_mobilenet_v3_large_robust.pt",
+        "weight": 0.25
+      },
+      {
+        "checkpoint": "static_efficientnet_b0_robust.pt",
+        "weight": 0.75
+      }
+    ]
+  },
+  "results": [
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "clean",
+      "accuracy": 0.839907192575406,
+      "macro_f1": 0.8417563380253053
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "clean",
+      "accuracy": 0.8863109048723898,
+      "macro_f1": 0.8842485457972141
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "clean",
+      "accuracy": 0.8909512761020881,
+      "macro_f1": 0.8897662786728165
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "mirror",
+      "accuracy": 0.839907192575406,
+      "macro_f1": 0.8422611400773501
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "mirror",
+      "accuracy": 0.8863109048723898,
+      "macro_f1": 0.8845147324510536
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "mirror",
+      "accuracy": 0.8932714617169374,
+      "macro_f1": 0.8921500621505358
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "far",
+      "accuracy": 0.7888631090487239,
+      "macro_f1": 0.7913142072623807
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "far",
+      "accuracy": 0.8561484918793504,
+      "macro_f1": 0.8501254751356239
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "far",
+      "accuracy": 0.8561484918793504,
+      "macro_f1": 0.8501428317566994
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "near",
+      "accuracy": 0.8352668213457076,
+      "macro_f1": 0.8338056143991455
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "near",
+      "accuracy": 0.8584686774941995,
+      "macro_f1": 0.8574739232168997
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "near",
+      "accuracy": 0.8584686774941995,
+      "macro_f1": 0.8573176941532293
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "shifted_far",
+      "accuracy": 0.8167053364269141,
+      "macro_f1": 0.8187224830226666
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "shifted_far",
+      "accuracy": 0.8654292343387471,
+      "macro_f1": 0.8552068950173192
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "shifted_far",
+      "accuracy": 0.8700696055684455,
+      "macro_f1": 0.859529594056311
+    },
+    {
+      "model": "mobilenet_v3_large",
+      "variant": "low_light",
+      "accuracy": 0.8538283062645011,
+      "macro_f1": 0.8521827343431351
+    },
+    {
+      "model": "efficientnet_b0",
+      "variant": "low_light",
+      "accuracy": 0.8955916473317865,
+      "macro_f1": 0.8933388743256931
+    },
+    {
+      "model": "selected_ensemble",
+      "variant": "low_light",
+      "accuracy": 0.8932714617169374,
+      "macro_f1": 0.8911958843135189
+    }
+  ]
+}

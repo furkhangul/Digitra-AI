@@ -1,0 +1,51 @@
+{
+  "source_dir": "C:\\Users\\Furkan\\Desktop\\Digitra AI\\Digitra\\digitra-tid-v4\\data\\raw\\tid_fingerspelling\\tsl finger spelling\\Images",
+  "samples": 2974,
+  "classes": 29,
+  "class_counts": {
+    "A": 104,
+    "B": 104,
+    "C": 101,
+    "D": 99,
+    "E": 104,
+    "F": 101,
+    "G": 103,
+    "H": 104,
+    "I": 104,
+    "J": 104,
+    "K": 104,
+    "L": 104,
+    "M": 103,
+    "N": 104,
+    "O": 104,
+    "P": 104,
+    "R": 104,
+    "S": 104,
+    "T": 96,
+    "U": 104,
+    "V": 86,
+    "Y": 104,
+    "Z": 104,
+    "Ç": 104,
+    "Ö": 104,
+    "Ü": 104,
+    "Ğ": 104,
+    "İ": 101,
+    "Ş": 104
+  },
+  "split_counts": {
+    "test": 431,
+    "train": 1969,
+    "val": 574
+  },
+  "pseudo_sessions": 318,
+  "unreadable": [],
+  "exact_duplicate_groups": 0,
+  "cross_label_duplicate_groups": [],
+  "limitations": [
+    "Kaynak veri kişi ve gerçek oturum kimliği içermiyor.",
+    "Split, ardışık 10 karelik pseudo-session bloklarıyla sızıntıyı azaltır.",
+    "Bu test signer-independent ürün testi değildir.",
+    "Lisans CC BY-NC-SA 4.0; ticari ürün eğitiminde kullanılamaz."
+  ]
+}

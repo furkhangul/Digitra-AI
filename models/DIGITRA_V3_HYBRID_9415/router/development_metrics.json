@@ -1,0 +1,12 @@
+{
+  "scope": "ASL-HG P8 development; fixed V3 router reproduction",
+  "samples": 2400,
+  "accuracy": 0.9954166666666666,
+  "macro_f1": 0.9953698815048068,
+  "errors": 11,
+  "rgb_accuracy": 0.89375,
+  "landmark_detected": 2386,
+  "ru_conflicts": 126,
+  "ru_conflict_errors": 0,
+  "locked_test_P9_P10_opened": false
+}

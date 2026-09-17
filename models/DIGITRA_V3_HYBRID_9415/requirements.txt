@@ -1,0 +1,8 @@
+joblib
+mediapipe
+numpy
+Pillow
+scikit-learn
+timm
+torch
+torchvision

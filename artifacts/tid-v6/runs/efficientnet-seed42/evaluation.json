@@ -1,0 +1,86 @@
+{
+  "name": "digitra-tid-v6-research",
+  "architecture": "efficientnet_b0",
+  "clean_real_train": {
+    "accuracy": 0.9974606399187405,
+    "macro_f1": 0.9974979648300883
+  },
+  "validation": {
+    "accuracy": 0.9198606271777003,
+    "macro_f1": 0.9168263884165682
+  },
+  "historical_test": {
+    "accuracy": 0.9025522041763341,
+    "macro_f1": 0.9023495700371291
+  },
+  "test_accuracy_95ci": [
+    0.8723897911832946,
+    0.9303944315545244
+  ],
+  "test_ece": 0.044565431756375805,
+  "robustness": [
+    {
+      "variant": "clean",
+      "accuracy": 0.9025522041763341,
+      "macro_f1": 0.9023495700371291
+    },
+    {
+      "variant": "mirror",
+      "accuracy": 0.9025522041763341,
+      "macro_f1": 0.9023495700371291
+    },
+    {
+      "variant": "far",
+      "accuracy": 0.8654292343387471,
+      "macro_f1": 0.8673341590045314
+    },
+    {
+      "variant": "shift",
+      "accuracy": 0.8979118329466357,
+      "macro_f1": 0.897559469964737
+    },
+    {
+      "variant": "rotation",
+      "accuracy": 0.8932714617169374,
+      "macro_f1": 0.8921349782277633
+    },
+    {
+      "variant": "low_light",
+      "accuracy": 0.9095127610208816,
+      "macro_f1": 0.9079564742148479
+    },
+    {
+      "variant": "blur",
+      "accuracy": 0.8909512761020881,
+      "macro_f1": 0.8914200343213777
+    },
+    {
+      "variant": "jpeg",
+      "accuracy": 0.8932714617169374,
+      "macro_f1": 0.8923614394807314
+    }
+  ],
+  "temperature": 0.6454863182561452,
+  "selected_epoch": 15,
+  "selected_source": "raw",
+  "epochs_ran": 24,
+  "export_parity_max_probability_error": 2.5033950805664062e-06,
+  "runtime_latency_ms_median": 20.357450004667044,
+  "runtime_latency_ms_p95": 31.35402002662886,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "targets": {
+    "clean_train_90": true,
+    "validation_90": true,
+    "test_80": true
+  },
+  "limitations": [
+    "Historical test already reported for V5; not a new external evaluation.",
+    "No signer identities; test is not signer-independent.",
+    "Synthetic hands are auxiliary training data, not evidence of real-world performance.",
+    "Static image classifier; moving letters need temporal context for reliable distinction.",
+    "Real dataset license: CC BY-NC-SA 4.0; research/non-commercial use."
+  ],
+  "source_manifest_sha256": "bff31fb25b61f164f43ddeb8caae7cb37063538006bd77044125048dd746ae33",
+  "test_samples": 431,
+  "classes": 29
+}

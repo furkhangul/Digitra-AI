@@ -1,0 +1,69 @@
+{
+  "name": "digitra-tid-mobilenet_v3_large-robust-v5-research",
+  "architecture": "mobilenet_v3_large",
+  "device": "cuda",
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "Y",
+    "Z",
+    "Ç",
+    "Ö",
+    "Ü",
+    "Ğ",
+    "İ",
+    "Ş"
+  ],
+  "augmentation": {
+    "horizontal_flip": true,
+    "scale": [
+      0.55,
+      1.25
+    ],
+    "translate": 0.16,
+    "rotation_degrees": 12,
+    "lighting_and_camera_jitter": true
+  },
+  "inference_tta": {
+    "mirror": true,
+    "scales": [
+      0.82,
+      1.0,
+      1.18
+    ]
+  },
+  "temperature": 0.6738606251224813,
+  "best_validation": {
+    "accuracy": 0.8153310104529616,
+    "macro_f1": 0.8110377553738162
+  },
+  "locked_test": {
+    "accuracy": 0.839907192575406,
+    "macro_f1": 0.8417563380253053
+  },
+  "epochs_ran": 15,
+  "train_seconds": 871.2680236999986,
+  "checkpoint": "C:\\Users\\Furkan\\Desktop\\Digitra AI\\Digitra\\digitra-tid-v4\\artifacts\\models\\static_mobilenet_v3_large_robust.pt",
+  "split_protocol": "10-frame pseudo-session blocks; not signer-independent",
+  "dataset_license": "CC BY-NC-SA 4.0 (non-commercial)",
+  "production_ready": false
+}

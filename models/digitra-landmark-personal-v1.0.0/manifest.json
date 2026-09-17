@@ -1,0 +1,13 @@
+{
+  "name": "digitra-landmark-personal-v1.0.0",
+  "files": {
+    "asl_classifier_personal.joblib": {
+      "bytes": 1234850,
+      "sha256": "66711bc45315e7b2427475214a0550f0e14340f8c6289325e07a2a6679020e10"
+    },
+    "tid_specials_temporal.joblib": {
+      "bytes": 2557753,
+      "sha256": "754fc2f90c668027728540872e8753e511bcd4bf33d5b2551468fdc6b2726412"
+    }
+  }
+}

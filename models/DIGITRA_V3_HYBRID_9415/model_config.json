@@ -1,0 +1,72 @@
+{
+  "name": "DIGITRA_V3_HYBRID_9415",
+  "created_at_utc": "2026-08-24T18:20:31.485655+00:00",
+  "scope": "24 static ASL fingerspelling letters; J/Z are temporal and excluded",
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
+  ],
+  "rgb": {
+    "architecture": "vit_base_patch16_dinov3.lvd1689m",
+    "image_size": 384,
+    "temperature": 1.2528430223464966,
+    "drop_rate": 0.06,
+    "drop_path_rate": 0.14
+  },
+  "landmark": {
+    "feature_version": "canonical_422_v1",
+    "blend_weights": {
+      "geometry": 0.0,
+      "graph": 0.0,
+      "extra_trees": 1.0,
+      "rbf_svc": 0.0
+    },
+    "kept_pair_experts": [
+      [
+        "N",
+        "S"
+      ]
+    ]
+  },
+  "router_development_metrics": {
+    "scope": "ASL-HG P8 development; fixed V3 router reproduction",
+    "samples": 2400,
+    "accuracy": 0.9954166666666666,
+    "macro_f1": 0.9953698815048068,
+    "errors": 11,
+    "rgb_accuracy": 0.89375,
+    "landmark_detected": 2386,
+    "ru_conflicts": 126,
+    "ru_conflict_errors": 0,
+    "locked_test_P9_P10_opened": false
+  },
+  "historical_locked_test": {
+    "accuracy": 0.9414583333333333,
+    "macro_f1": 0.925553,
+    "errors": 281,
+    "samples": 4800,
+    "note": "Historical one-shot P9/P10 result from the original frozen V3 run; not re-labeled as a new test."
+  }
+}

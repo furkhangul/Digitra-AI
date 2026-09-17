@@ -1,0 +1,112 @@
+INFO:     Started server process [11424]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8006 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64380 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55280 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55444 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53308 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58837 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54991 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52963 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50487 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54199 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65273 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59889 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49852 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\Furkan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Furkan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+INFO:     127.0.0.1:54563 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63798 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55909 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50350 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54193 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49369 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58058 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55518 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55975 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56571 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62950 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55504 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63536 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57345 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51415 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58417 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49198 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53893 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55094 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54253 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61710 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60739 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60703 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54329 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57230 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55428 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62137 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62058 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:64977 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60048 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50905 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56059 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57697 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58958 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50704 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56941 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63734 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62356 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open

@@ -1,0 +1,273 @@
+{
+  "scope": "ASL-HG P8 development only; 24 static letters",
+  "train_participants": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+  ],
+  "development_participant": "P8",
+  "locked_test_participants_read": false,
+  "train_detected": 16800,
+  "development_detected": 2386,
+  "development_input_total": 2400,
+  "development_detector_misses": 14,
+  "development_detected_accuracy": 0.9564124056999161,
+  "development_macro_f1": 0.9452176404486078,
+  "development_end_to_end_accuracy": 0.9508333333333333,
+  "development_errors_end_to_end": 118,
+  "blend_weights": {
+    "geometry": 0.0,
+    "graph": 0.0,
+    "extra_trees": 1.0,
+    "rbf_svc": 0.0
+  },
+  "kept_pair_experts": [
+    [
+      "N",
+      "S"
+    ]
+  ],
+  "neural_selection": [
+    {
+      "seed": 2027,
+      "best_epoch": 8,
+      "score": [
+        0.8891792189634273,
+        0.9140821458507963
+      ]
+    },
+    {
+      "seed": 3407,
+      "best_epoch": 25,
+      "score": [
+        0.8999143180558381,
+        0.9203688181056161
+      ]
+    }
+  ],
+  "graph_selection": {
+    "seed": 5521,
+    "best_epoch": 20,
+    "score": [
+      0.9369534736500142,
+      0.9509639564124057
+    ]
+  },
+  "per_class": {
+    "A": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "B": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "C": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "D": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "E": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "F": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "G": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "H": {
+      "correct": 77,
+      "detected": 86,
+      "input_total": 100,
+      "end_to_end_accuracy": 0.77
+    },
+    "I": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "K": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "L": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "M": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "N": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "O": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "P": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "Q": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "R": {
+      "correct": 8,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 0.08
+    },
+    "S": {
+      "correct": 98,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 0.98
+    },
+    "T": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "U": {
+      "correct": 99,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 0.99
+    },
+    "V": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "W": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "X": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    },
+    "Y": {
+      "correct": 100,
+      "detected": 100,
+      "input_total": 100,
+      "end_to_end_accuracy": 1.0
+    }
+  },
+  "top_confusions": [
+    {
+      "true": "R",
+      "pred": "U",
+      "count": 85
+    },
+    {
+      "true": "R",
+      "pred": "H",
+      "count": 7
+    },
+    {
+      "true": "H",
+      "pred": "P",
+      "count": 2
+    },
+    {
+      "true": "S",
+      "pred": "A",
+      "count": 2
+    },
+    {
+      "true": "H",
+      "pred": "A",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "B",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "G",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "L",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "N",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "Q",
+      "count": 1
+    },
+    {
+      "true": "H",
+      "pred": "Y",
+      "count": 1
+    },
+    {
+      "true": "U",
+      "pred": "R",
+      "count": 1
+    }
+  ],
+  "claims": {
+    "raw_99_proven": false,
+    "development_only": true,
+    "asl_not_tid": true
+  }
+}

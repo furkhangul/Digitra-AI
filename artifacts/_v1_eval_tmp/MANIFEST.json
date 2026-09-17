@@ -1,0 +1,38 @@
+{
+  "extra_trees.joblib": {
+    "sha256": "7420552c5c6c185acef77a3b3003d321e80405ad7678b5177f485186450aa1c9",
+    "bytes": 105806697
+  },
+  "feature_scaler.joblib": {
+    "sha256": "3b57dd545e0cb0b59b6d5dabcc47be39dca8cbccd20d1b8f90b6ac0454130aa6",
+    "bytes": 9862
+  },
+  "hand_landmarker.task": {
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "bytes": 7819105
+  },
+  "inference.py": {
+    "sha256": "157ea3ead8c6f001ed354ab79df0a63c4b93be964f062c6014ee4a86b6b6a1bf",
+    "bytes": 11564
+  },
+  "locked_test_predictions.csv": {
+    "sha256": "bceb8a059be4af65e861de244abc684fe122e3900496441bc3ca3e887e6dd45d",
+    "bytes": 71467
+  },
+  "metadata.json": {
+    "sha256": "ab750f393badc5e5526cb580ba52b7a9d5001299250b695ff16b2d1e14322946",
+    "bytes": 1238
+  },
+  "neural_ensemble.pt": {
+    "sha256": "f0eb86109e7f430500d842143c9ba71ab71f0affe143497257f7e33b1313df88",
+    "bytes": 16661215
+  },
+  "pair_experts.joblib": {
+    "sha256": "c4f95228d805259227859dbfe1dd1a33b8dcd3ba681f8027edbc1d288f792b7b",
+    "bytes": 1670150
+  },
+  "requirements.txt": {
+    "sha256": "e3f308a7f041796887f6926ef739b27c85eb9c70126042d25f46a2b3af849ddc",
+    "bytes": 78
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "checkpoint_epoch": 10,
+  "checkpoint_source": "raw",
+  "validation": {
+    "scales": [
+      1.0
+    ],
+    "mirror": true,
+    "accuracy": 0.8815331010452961,
+    "macro_f1": 0.8751757128234721
+  },
+  "temperature": 0.6137768582044778,
+  "selective_validation": {
+    "threshold": 0.4,
+    "coverage": 0.975609756097561,
+    "accuracy": 0.9
+  },
+  "manifest_sha256": "bff31fb25b61f164f43ddeb8caae7cb37063538006bd77044125048dd746ae33"
+}

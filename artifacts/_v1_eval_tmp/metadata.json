@@ -1,0 +1,97 @@
+{
+  "name": "Digitra Landmark Ensemble V1",
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "del",
+    "space"
+  ],
+  "no_hand_class": "nothing",
+  "validation": {
+    "signers": [
+      "10",
+      "11"
+    ],
+    "detected_accuracy": 0.895576923076923,
+    "macro_f1": 0.903470931812225
+  },
+  "locked_test": {
+    "signers": [
+      "14",
+      "15"
+    ],
+    "detected_accuracy": 0.8176273854023215,
+    "macro_f1": 0.8104509230993219,
+    "end_to_end_accuracy": 0.7992307692307692,
+    "detector_misses": 117
+  },
+  "training": {
+    "feature_rows": 31855,
+    "feature_version": "canonical_422_v1",
+    "signer_disjoint": true
+  },
+  "blend": {
+    "geometry": 0.8075,
+    "extra_trees": 0.0425,
+    "graph": 0.15
+  },
+  "experts": [
+    [
+      "M",
+      "T"
+    ],
+    [
+      "P",
+      "Q"
+    ],
+    [
+      "I",
+      "J"
+    ],
+    [
+      "B",
+      "F"
+    ],
+    [
+      "O",
+      "Q"
+    ],
+    [
+      "C",
+      "W"
+    ],
+    [
+      "N",
+      "T"
+    ],
+    [
+      "K",
+      "U"
+    ]
+  ],
+  "seed": 2026
+}

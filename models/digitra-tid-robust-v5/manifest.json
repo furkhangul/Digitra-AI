@@ -1,0 +1,29 @@
+{
+  "name": "digitra-tid-robust-v5.0.0",
+  "files": {
+    "evaluation.json": {
+      "bytes": 3527,
+      "sha256": "6398c5b4d5e2b2eabd4d982a944bebfbf31ba8571c766da1b6c3197a3a850175"
+    },
+    "robust_cnn_ensemble.json": {
+      "bytes": 614,
+      "sha256": "2645718867bb9c8c511a1446bbf3cadcb4ccff12f6ec66d32f9758d6a9348a5b"
+    },
+    "static_efficientnet_b0_robust_metadata.json": {
+      "bytes": 1351,
+      "sha256": "f113c6f6441da60643ecd1f28b578749aabcf99847a437c4fc1efe56d9eac067"
+    },
+    "static_efficientnet_b0_robust.pt": {
+      "bytes": 16465130,
+      "sha256": "f6419c4a38f6c6084df955980cb9a464a023276a48fec39a110b8f644932a81f"
+    },
+    "static_mobilenet_v3_large_robust_metadata.json": {
+      "bytes": 1360,
+      "sha256": "a703d17677c9563c97ab9f605d90c513178a89c4e072130cc7150640b98f8d79"
+    },
+    "static_mobilenet_v3_large_robust.pt": {
+      "bytes": 17154910,
+      "sha256": "2c560409388cc6e44c0de5194c95d2fb04349246c4efd50c1e64a674537a7a47"
+    }
+  }
+}

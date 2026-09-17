@@ -1,0 +1,57 @@
+{
+  "name": "digitra-tid-augmented-v6",
+  "files": {
+    "model.pt": {
+      "sha256": "ce34186ab5c1f5a03e3dcd6fdf6b0440bffc1bebd92407458347302a7a8f96c4",
+      "bytes": 16457422
+    },
+    "robust_cnn_ensemble.json": {
+      "sha256": "35ab8635588bca8a800aabb70d01dfb620b3c609fc6517f9c79da8c2e3e53613",
+      "bytes": 207
+    },
+    "config.json": {
+      "sha256": "08390e2b0edc67732c5b763f8354601bd726f5b4a14f6c23448a7f3905e88a2b",
+      "bytes": 1601
+    },
+    "selection.json": {
+      "sha256": "202fedf92e551ebb358abb7e37eb09e3dc234b850f4df0fdad3611c847dc2d42",
+      "bytes": 486
+    },
+    "evaluation.json": {
+      "sha256": "947afeabe5984dad1a8258a6d15d1d1fc4c6f73008ee7ae154436b83b5bf2144",
+      "bytes": 2480
+    },
+    "per_class.json": {
+      "sha256": "fdf1c996b786baf3aa94ebbfd5928ca3045eac1958c2b913c5b7adfc02fa8d23",
+      "bytes": 3865
+    },
+    "training_curves.png": {
+      "sha256": "688f397e3ee6ce7b712feba9712d43301a6be19c935a1f3e74dce87f16ae71cb",
+      "bytes": 59928
+    },
+    "confusion_matrix.png": {
+      "sha256": "51df8bc3c164036876cd9a8c463413a7aa0f48564ad091b088e6d62611a3139f",
+      "bytes": 54719
+    },
+    "history.json": {
+      "sha256": "a2432da3e9e09b0a41c6363d977cc3abdda43417c5824f645ae8284985740f2c",
+      "bytes": 10366
+    },
+    "test_started.json": {
+      "sha256": "8477cc56c077e9410aa98f4ec36551fb80f2c98f34b4471e4279b7e8a3ddc755",
+      "bytes": 121
+    },
+    "test_predictions.csv": {
+      "sha256": "1f83f0c55b431ac76b09c63c701aaf991690f31a3b7a7bb2f47883c8aa5e0f4b",
+      "bytes": 104156
+    },
+    "provenance.json": {
+      "sha256": "b4ce61d77243d888052647dccc0a96c1aedaf1c9010cb904eece75b4ba072153",
+      "bytes": 3032
+    },
+    "model_card.md": {
+      "sha256": "8c3b3dca68131c27b58cbd503df2c015d6ae041fba2b52b4690fd4ed5dffd420",
+      "bytes": 1853
+    }
+  }
+}

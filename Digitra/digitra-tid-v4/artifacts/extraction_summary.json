@@ -1,0 +1,9 @@
+{
+  "input": 2974,
+  "extracted": 2136,
+  "failed": 838,
+  "detection_rate": 0.7182246133154001,
+  "two_hand_rate_detected": 0.3000936329588015,
+  "n_features": 328,
+  "output": "C:\\Users\\Furkan\\Desktop\\Digitra AI\\Digitra\\digitra-tid-v4\\artifacts\\features\\static_two_hand.parquet"
+}

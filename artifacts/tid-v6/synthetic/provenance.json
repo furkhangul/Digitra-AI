@@ -1,0 +1,18 @@
+{
+  "renderer": "Intel(R) UHD Graphics",
+  "source_hashes": {
+    "approach-offsets.json": "c5f58e75482a8b271ed2d6b73c9b65c4990a98e0be045502da5c78decff45cda",
+    "collision-surface.json": "35d795eef930687dfd1a1c8548226bd3f40b8e4804b38895073d4a3b83f9a5ca",
+    "contact-guard.ts": "0e6254b77c283c334a641f9532d21a74327c61112ca04f718805b03ecce52018",
+    "hand-scene.tsx": "3638c7987b2205be2733549a32650f977a989d28625f00244cc149f5a889af9e",
+    "motion.ts": "8cb91e86debaad9cc24dbf03729f301b19d9d06da7edbd58c28f1086e0dc9425",
+    "poses.ts": "a8859807255217736e90285803ce9534451c08bb2a17ad0c9c1e8bc813e4f7d8",
+    "rig-spec.json": "c781b61fa331fbfeccd30c97380664a0fa8a8fbd1bb1bf632feaaeccd7e00644",
+    "rounded-hand.ts": "e4b63750a9cc7213029576a6a5d5846ce3cf410c217e4175a2c4fd70c91f41e9",
+    "surface-offsets.json": "b9899bb8755a30f39a6a52445bc6fdf24cc720007ab1e22690066143595af44e",
+    "view-roll.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "images": 435,
+  "static_training_images": 330,
+  "role": "train-only auxiliary; no real-world accuracy inferred from renders"
+}

@@ -1,0 +1,40 @@
+{
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
+  ],
+  "rules": [
+    "if RGB in {M,N} and landmark in {A,N,S,T}: landmark",
+    "if RGB=R and landmark=U: R/U specialist blend",
+    "otherwise: RGB"
+  ],
+  "ru": {
+    "name": "logreg",
+    "rgb_weight": 0.53,
+    "specialist_weight": 0.47,
+    "threshold": 0.5
+  },
+  "development_only": true
+}

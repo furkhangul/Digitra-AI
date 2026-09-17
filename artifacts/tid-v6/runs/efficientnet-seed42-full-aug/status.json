@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "evaluation": "artifacts\\tid-v6\\runs\\efficientnet-seed42-full-aug\\evaluation.json",
+  "clean_train_90": true,
+  "validation_90": false,
+  "test_80": true
+}

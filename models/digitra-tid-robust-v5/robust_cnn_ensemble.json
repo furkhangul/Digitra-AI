@@ -1,0 +1,25 @@
+{
+  "format_version": 1,
+  "selection": "weight selected only on validation macro-F1",
+  "validation": {
+    "mobilenet_weight": 0.25,
+    "accuracy": 0.8867595818815331,
+    "macro_f1": 0.8785839791146569
+  },
+  "recommended_confidence": 0.28,
+  "validation_selective_metrics": {
+    "threshold": 0.28,
+    "coverage": 0.9790940766550522,
+    "accepted_accuracy": 0.900355871886121
+  },
+  "members": [
+    {
+      "checkpoint": "static_mobilenet_v3_large_robust.pt",
+      "weight": 0.25
+    },
+    {
+      "checkpoint": "static_efficientnet_b0_robust.pt",
+      "weight": 0.75
+    }
+  ]
+}

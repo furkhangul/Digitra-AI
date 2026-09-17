@@ -1,0 +1,57 @@
+.camera { position: relative; width: 100%; height: 100%; min-height: 0; min-width: 0; overflow: hidden; background: #0d1e20; color: #eaf5ed; color-scheme: dark; }
+.video, .landmarks { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.landmarks { pointer-events: none; z-index: 1; }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(#0b191a9c, transparent 25%, transparent 65%, #0b191ae8); }
+.status { position: absolute; top: 25px; left: 25px; display: flex; align-items: center; gap: 7px; font-size: 10px; color: #a1bcb0; }
+.status > span { width: 5px; height: 5px; border-radius: 100%; }
+.connected { background: #82d9af; box-shadow: 0 0 10px #82d9af40; }
+.disconnected { background: #cfa374; }
+.startArea { position: absolute; inset: 54px 20px 90px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.handRing { width: clamp(80px, 11vw, 170px); height: clamp(80px, 11vw, 170px); border-radius: 50%; border: 1px solid #73c2a226; position: relative; display: grid; place-content: center; color: #8cd8b6; background: radial-gradient(#28574952, transparent 70%); margin-bottom: 28px; }
+.handRing::after { content: ""; position: absolute; inset: -18px; border: 1px dashed #73c2a215; border-radius: 50%; }
+.handRing > span { position: absolute; top: 8%; right: 17%; width: 5px; height: 5px; border-radius: 50%; background: #88d7b3; }
+.startArea h2 { font: 400 clamp(18px, 2vw, 32px)/1.2 var(--font-cal), sans-serif; letter-spacing: -.035em; }
+.startArea p { color: #7b9b8c; font-size: 12px; margin-top: 12px; line-height: 1.6; }
+.startButton { display: flex; align-items: center; gap: 10px; padding: 13px 23px; margin-top: 25px; border-radius: 10px; background: #9be6bf; color: #12382b; font-size: 13px; font-weight: 500; transition: background .2s; }
+.startButton:hover { background: #bef4d4; }
+.startButton:disabled { opacity: .5; cursor: wait; }
+.frameGuide { position: absolute; inset: 20% 16% 24%; pointer-events: none; }
+.frameGuide > i { position: absolute; width: 22px; height: 22px; border: solid #a2e1b854; border-width: 0; }
+.frameGuide > i:nth-child(1) { top: 0; left: 0; border-top-width: 1px; border-left-width: 1px; border-top-left-radius: 10px; }
+.frameGuide > i:nth-child(2) { top: 0; right: 0; border-top-width: 1px; border-right-width: 1px; border-top-right-radius: 10px; }
+.frameGuide > i:nth-child(3) { bottom: 0; left: 0; border-bottom-width: 1px; border-left-width: 1px; border-bottom-left-radius: 10px; }
+.frameGuide > i:nth-child(4) { bottom: 0; right: 0; border-bottom-width: 1px; border-right-width: 1px; border-bottom-right-radius: 10px; }
+.handCount { position: absolute; top: 60px; left: 25px; color: #a2c8b4; font-size: 10px; }
+.holdProgress { position: absolute; bottom: 100px; left: 25px; right: 25px; font-size: 10px; color: #a6c9b6; }
+.holdProgress > div { height: 2px; background: #a0d5b821; margin-top: 8px; overflow: hidden; }
+.holdProgress i { display: block; height: 100%; background: #8edcaa; transition: width .1s; }
+.stopButton { position: absolute; bottom: 27px; right: 25px; display: grid; place-content: center; width: 38px; height: 38px; border: 1px solid #aadcc638; border-radius: 50%; color: #b1d0bd; z-index: 3; background: #0b2429bb; }
+.stopButton:hover { background: #25493b; }
+.error { position: absolute; bottom: 84px; left: 25px; right: 25px; color: #f0bdb0; background: #281c1bea; border-left: 2px solid #bc796a; padding: 9px 12px; font-size: 11px; line-height: 1.5; z-index: 3; }
+.startButton:focus-visible, .stopButton:focus-visible { outline: 2px solid #acf4ce; outline-offset: 4px; }
+@media (max-width: 900px) {
+  .status { left: 17px; font-size: 9px; max-width: 40%; line-height: 1.5; }
+  .startArea h2 { font-size: 21px; }
+  .startArea p { font-size: 11px; }
+  .handRing { margin-bottom: 24px; }
+  .stopButton { bottom: 19px; right: 14px; width: 30px; height: 30px; }
+  .holdProgress { left: 17px; right: 17px; bottom: 95px; }
+}
+@media (max-width: 600px) {
+  .status { top: 14px; left: 14px; }
+  .startArea { inset: 35px 14px 48px; }
+  .handRing { display: none; }
+  .startArea h2 { font-size: 20px; }
+  .startArea p { margin-top: 7px; font-size: 10px; }
+  .startButton { margin-top: 16px; padding: 11px 19px; font-size: 12px; }
+  .handCount { left: 14px; top: 40px; font-size: 9px; }
+  .holdProgress { bottom: 58px; left: 14px; right: 14px; font-size: 9px; }
+  .stopButton { bottom: 12px; }
+  .error { left: 14px; right: 14px; bottom: 52px; font-size: 9px; padding: 7px 9px; }
+}
+@media (max-height: 550px) and (min-width: 601px) {
+  .handRing { display: none; }
+  .startArea { inset: 50px 16px 85px; }
+  .startArea h2 { font-size: 22px; }
+  .startButton { margin-top: 14px; }
+}

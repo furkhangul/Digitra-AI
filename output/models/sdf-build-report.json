@@ -1,0 +1,14 @@
+{
+  "vertices": 11262,
+  "faces": 22520,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "bones": 21,
+  "actions": 51,
+  "vertexGroups": 16,
+  "weightSumRange": [
+    0.9998149275779724,
+    1.0000000447034836
+  ],
+  "fingerBoundFraction": 0.559
+}

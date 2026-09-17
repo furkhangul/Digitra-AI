@@ -1,0 +1,101 @@
+{
+  "name": "digitra-tid-v6-research",
+  "architecture": "efficientnet_b0",
+  "clean_real_train": {
+    "accuracy": 0.9964448958862366,
+    "macro_f1": 0.996498254601169
+  },
+  "validation": {
+    "accuracy": 0.8815331010452961,
+    "macro_f1": 0.8751757128234721
+  },
+  "historical_test": {
+    "accuracy": 0.8909512761020881,
+    "macro_f1": 0.8901492826127366
+  },
+  "test_accuracy_95ci": [
+    0.8607888631090487,
+    0.9187935034802784
+  ],
+  "test_ece": 0.0462151686304407,
+  "robustness": [
+    {
+      "variant": "clean",
+      "accuracy": 0.8909512761020881,
+      "macro_f1": 0.8901492826127366
+    },
+    {
+      "variant": "mirror",
+      "accuracy": 0.8909512761020881,
+      "macro_f1": 0.8901492826127366
+    },
+    {
+      "variant": "far",
+      "accuracy": 0.839907192575406,
+      "macro_f1": 0.8361704667177424
+    },
+    {
+      "variant": "shift",
+      "accuracy": 0.91415313225058,
+      "macro_f1": 0.9128397170423215
+    },
+    {
+      "variant": "rotation",
+      "accuracy": 0.8955916473317865,
+      "macro_f1": 0.8925237906805944
+    },
+    {
+      "variant": "low_light",
+      "accuracy": 0.9071925754060325,
+      "macro_f1": 0.9052512339931255
+    },
+    {
+      "variant": "high_key",
+      "accuracy": 0.9048723897911833,
+      "macro_f1": 0.9028896410957333
+    },
+    {
+      "variant": "backlight",
+      "accuracy": 0.888631090487239,
+      "macro_f1": 0.8874595183969528
+    },
+    {
+      "variant": "color_temperature",
+      "accuracy": 0.8932714617169374,
+      "macro_f1": 0.8921814038481872
+    },
+    {
+      "variant": "blur",
+      "accuracy": 0.8839907192575406,
+      "macro_f1": 0.8829833582130437
+    },
+    {
+      "variant": "jpeg",
+      "accuracy": 0.8816705336426914,
+      "macro_f1": 0.8806477544191244
+    }
+  ],
+  "temperature": 0.6137768582044778,
+  "selected_epoch": 10,
+  "selected_source": "raw",
+  "epochs_ran": 11,
+  "export_parity_max_probability_error": 4.001049092039466e-08,
+  "runtime_latency_ms_median": 31.83305001584813,
+  "runtime_latency_ms_p95": 34.968350001145154,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "targets": {
+    "clean_train_90": true,
+    "validation_90": false,
+    "test_80": true
+  },
+  "limitations": [
+    "Historical test already reported for V5; not a new external evaluation.",
+    "No signer identities; test is not signer-independent.",
+    "Synthetic hands are auxiliary training data, not evidence of real-world performance.",
+    "Static image classifier; moving letters need temporal context for reliable distinction.",
+    "Real dataset license: CC BY-NC-SA 4.0; research/non-commercial use."
+  ],
+  "source_manifest_sha256": "bff31fb25b61f164f43ddeb8caae7cb37063538006bd77044125048dd746ae33",
+  "test_samples": 431,
+  "classes": 29
+}

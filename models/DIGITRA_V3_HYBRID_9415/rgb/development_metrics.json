@@ -1,0 +1,47 @@
+{
+  "name": "Digitra Static V3 External \u2014 development run",
+  "scope": "24 static ASL fingerspelling letters; J/Z excluded",
+  "architecture": "vit_base_patch16_dinov3.lvd1689m",
+  "image_size": 384,
+  "parameter_count": 85659672,
+  "protocol": {
+    "train_participants": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7"
+    ],
+    "calibration_participants": [
+      "P8"
+    ],
+    "locked_test_participants": [
+      "P10",
+      "P9"
+    ],
+    "locked_test_opened": false
+  },
+  "best_checkpoint": {
+    "score": [
+      0.8731124609345321,
+      0.89375
+    ],
+    "phase": "full",
+    "epoch": 3
+  },
+  "temperature": 1.2528430223464966,
+  "calibration": {
+    "accuracy": 0.89375,
+    "macro_f1": 0.8731124609345321,
+    "ece_15": 0.09207183880110581,
+    "errors": 255,
+    "samples": 2400
+  },
+  "claims": {
+    "raw_99_9_proven": false,
+    "development_only": true,
+    "asl_not_tid": true
+  }
+}

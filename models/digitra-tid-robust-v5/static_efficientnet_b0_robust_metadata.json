@@ -1,0 +1,69 @@
+{
+  "name": "digitra-tid-efficientnet_b0-robust-v5-research",
+  "architecture": "efficientnet_b0",
+  "device": "cuda",
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "Y",
+    "Z",
+    "Ç",
+    "Ö",
+    "Ü",
+    "Ğ",
+    "İ",
+    "Ş"
+  ],
+  "augmentation": {
+    "horizontal_flip": true,
+    "scale": [
+      0.55,
+      1.25
+    ],
+    "translate": 0.16,
+    "rotation_degrees": 12,
+    "lighting_and_camera_jitter": true
+  },
+  "inference_tta": {
+    "mirror": true,
+    "scales": [
+      0.82,
+      1.0,
+      1.18
+    ]
+  },
+  "temperature": 0.5491148569424217,
+  "best_validation": {
+    "accuracy": 0.872822299651568,
+    "macro_f1": 0.8590669594670569
+  },
+  "locked_test": {
+    "accuracy": 0.8863109048723898,
+    "macro_f1": 0.8842485457972141
+  },
+  "epochs_ran": 14,
+  "train_seconds": 895.6869959999967,
+  "checkpoint": "C:\\Users\\Furkan\\Desktop\\Digitra AI\\Digitra\\digitra-tid-v4\\artifacts\\models\\static_efficientnet_b0_robust.pt",
+  "split_protocol": "10-frame pseudo-session blocks; not signer-independent",
+  "dataset_license": "CC BY-NC-SA 4.0 (non-commercial)",
+  "production_ready": false
+}

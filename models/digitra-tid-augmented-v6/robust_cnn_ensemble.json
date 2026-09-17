@@ -1,0 +1,11 @@
+{
+  "format_version": 1,
+  "recommended_confidence": 0.0,
+  "selection": "V6 validation-selected single member",
+  "members": [
+    {
+      "checkpoint": "model.pt",
+      "weight": 1.0
+    }
+  ]
+}

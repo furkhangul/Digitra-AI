@@ -1,0 +1,16 @@
+INFO:     Started server process [20276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53804 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65129 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53887 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51329 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50798 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:51098 - "WebSocket /ws/recognize" [accepted]
+INFO:     connection open

@@ -1,0 +1,137 @@
+{
+  "scope": "Static authored poses, inter-hand surface crossings only",
+  "poses": [
+    {
+      "letter": "A",
+      "intersectingTrianglePairsBefore": 642,
+      "after": 0,
+      "releaseDistance": 0.3567
+    },
+    {
+      "letter": "B",
+      "intersectingTrianglePairsBefore": 2566,
+      "after": 0,
+      "releaseDistance": 0.2483
+    },
+    {
+      "letter": "Ç",
+      "intersectingTrianglePairsBefore": 4387,
+      "after": 0,
+      "releaseDistance": 0.4335
+    },
+    {
+      "letter": "D",
+      "intersectingTrianglePairsBefore": 270,
+      "after": 0,
+      "releaseDistance": 0.1689
+    },
+    {
+      "letter": "E",
+      "intersectingTrianglePairsBefore": 1823,
+      "after": 0,
+      "releaseDistance": 0.461
+    },
+    {
+      "letter": "F",
+      "intersectingTrianglePairsBefore": 1328,
+      "after": 0,
+      "releaseDistance": 0.3367
+    },
+    {
+      "letter": "G",
+      "intersectingTrianglePairsBefore": 0,
+      "after": 0,
+      "releaseDistance": 0.0
+    },
+    {
+      "letter": "Ğ",
+      "intersectingTrianglePairsBefore": 0,
+      "after": 0,
+      "releaseDistance": 0.0
+    },
+    {
+      "letter": "H",
+      "intersectingTrianglePairsBefore": 3729,
+      "after": 0,
+      "releaseDistance": 0.6487
+    },
+    {
+      "letter": "İ",
+      "intersectingTrianglePairsBefore": 716,
+      "after": 0,
+      "releaseDistance": 0.2105
+    },
+    {
+      "letter": "J",
+      "intersectingTrianglePairsBefore": 408,
+      "after": 0,
+      "releaseDistance": 0.163
+    },
+    {
+      "letter": "K",
+      "intersectingTrianglePairsBefore": 1046,
+      "after": 0,
+      "releaseDistance": 0.1682
+    },
+    {
+      "letter": "M",
+      "intersectingTrianglePairsBefore": 544,
+      "after": 0,
+      "releaseDistance": 0.2727
+    },
+    {
+      "letter": "N",
+      "intersectingTrianglePairsBefore": 1180,
+      "after": 0,
+      "releaseDistance": 0.2839
+    },
+    {
+      "letter": "Ö",
+      "intersectingTrianglePairsBefore": 900,
+      "after": 0,
+      "releaseDistance": 0.1667
+    },
+    {
+      "letter": "R",
+      "intersectingTrianglePairsBefore": 1919,
+      "after": 0,
+      "releaseDistance": 0.451
+    },
+    {
+      "letter": "S",
+      "intersectingTrianglePairsBefore": 2540,
+      "after": 0,
+      "releaseDistance": 0.5862
+    },
+    {
+      "letter": "Ş",
+      "intersectingTrianglePairsBefore": 530,
+      "after": 0,
+      "releaseDistance": 0.2894
+    },
+    {
+      "letter": "T",
+      "intersectingTrianglePairsBefore": 286,
+      "after": 0,
+      "releaseDistance": 0.2182
+    },
+    {
+      "letter": "Ü",
+      "intersectingTrianglePairsBefore": 356,
+      "after": 0,
+      "releaseDistance": 0.2294
+    },
+    {
+      "letter": "Y",
+      "intersectingTrianglePairsBefore": 3185,
+      "after": 0,
+      "releaseDistance": 0.6575
+    },
+    {
+      "letter": "Z",
+      "intersectingTrianglePairsBefore": 292,
+      "after": 0,
+      "releaseDistance": 0.1474
+    }
+  ]
+}

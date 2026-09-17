@@ -1,0 +1,3694 @@
+[
+  {
+    "ch": "A",
+    "tip": "İki parmağı aşağı uzat; diğer elin işaret parmağını aralarına yatay yerleştir.",
+    "detail": "İki elin oluşturduğu A biçimini takip et.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          -90
+        ],
+        "position": [
+          -0.9563788952506311,
+          -0.8383450351002204,
+          -0.03749791314684431
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          0.6072233011837376,
+          1.1875006291671137,
+          -0.4192249131468443
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "B",
+    "tip": "İki elin kıvrılmış baş ve işaret parmaklarını üst üste buluştur.",
+    "detail": "Üst ve alt halkayı ayrı ayrı incele.",
+    "sourceVariant": "B1",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          175
+        ],
+        "position": [
+          -0.32395170236961357,
+          0.9044918330575608,
+          0.33298183018990835
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -65,
+          5
+        ],
+        "position": [
+          0.4009030445648536,
+          -0.9044918330575608,
+          -0.48030137660314803
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "C",
+    "tip": "Baş ve işaret parmağın arasını açık bırakarak C biçimini oluştur.",
+    "detail": "Parmak uçları birbirine değmez.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          -15
+        ],
+        "position": [
+          -0.30721967795327076,
+          -0.7585021714108118,
+          0.13704339540102978
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.092780322046729,
+          -2.7585021714108118,
+          -0.3629566045989702
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "Ç",
+    "tip": "C biçiminin altına diğer elin kıvrılmış parmaklarını getir.",
+    "detail": "İkinci el, C ile Ç arasındaki farkı gösterir.",
+    "sourceVariant": "Ç1",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          40,
+          -15
+        ],
+        "position": [
+          -0.6084854114947582,
+          -0.4726192647435723,
+          -0.04858526398923871
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -40,
+          30
+        ],
+        "position": [
+          0.6417254413944724,
+          -1.0443850780780513,
+          0.08840079403506138
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "D",
+    "tip": "Bir işaret parmağını dik tut; diğer elin kavisiyle uçlarını birleştir.",
+    "detail": "Dik parmak ve kavis birlikte D biçimini oluşturur.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -65,
+          0
+        ],
+        "position": [
+          0.6460033804403711,
+          -0.5663131467541014,
+          0.00926141291784828
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.45116940375553394,
+          -0.904478594660759,
+          -0.32415704346344293
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "E",
+    "tip": "Üç parmağı yatay uzat; diğer işaret parmağını köklerine dik yerleştir.",
+    "detail": "Üç yatay parmak görünür kalmalı.",
+    "sourceVariant": "E1",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 5,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -5,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          -90
+        ],
+        "position": [
+          -0.9849999999999997,
+          0.4734520152902224,
+          -0.5788669131468442
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.46843337560072495,
+          -0.9405051740312954,
+          0.1221440868531557
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "F",
+    "tip": "Baş ve işaret parmağını aç; diğer işaret parmağını yatay yerleştir.",
+    "detail": "İki elin temas noktasına bak.",
+    "sourceVariant": "F1",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "position": [
+          1.324304699153279,
+          -0.02660983478650447,
+          -0.1833614131468443
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 12,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          -0.4564395278761935,
+          0.9044785946607592,
+          -0.27336141314684426
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "G",
+    "tip": "İki kapalı eli yatay tutup üst üste yerleştir.",
+    "detail": "Üstteki elin işaret parmağı hafif kıvrık durur.",
+    "sourceVariant": "G2",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              8,
+              95,
+              40
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          100,
+          0,
+          -90
+        ],
+        "position": [
+          -0.9908792709996379,
+          0.7760009196746904,
+          -0.07791138826860966
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          -100,
+          0,
+          90
+        ],
+        "position": [
+          0.9908792709996379,
+          -0.78932436499685,
+          0.13874631739407636
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "Ğ",
+    "tip": "G biçimini koruyup üstteki elin kıvrık parmağını hareket ettir.",
+    "detail": "G ve Ğ arasındaki hareket farkını izle.",
+    "sourceVariant": "Ğ2",
+    "motion": "double-tap",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              8,
+              95,
+              40
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          100,
+          0,
+          -90
+        ],
+        "position": [
+          -0.9908792709996379,
+          0.7760009196746904,
+          -0.07791138826860966
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          -100,
+          0,
+          90
+        ],
+        "position": [
+          0.9908792709996379,
+          -0.78932436499685,
+          0.13874631739407636
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "H",
+    "tip": "İki parmağı aşağı uzat; diğer işaret parmağını yatay olarak üzerlerine getir.",
+    "detail": "İki dik parmak ve yatay temas birlikte görülmeli.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "position": [
+          0.904478594660759,
+          0.043593144305050124,
+          0.14100008685315574
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          -0.3248093719221651,
+          0.9850000000000001,
+          -0.5977229131468442
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "I",
+    "tip": "İşaret parmağını dik tut; diğer parmakları kapat.",
+    "detail": "Başparmak kapalı parmakların yanında durur.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0.019638890766915856,
+          -0.904478594660759,
+          -0.2283614131468443
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.4196388907669157,
+          -2.904478594660759,
+          -0.7283614131468443
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "İ",
+    "tip": "Dik işaret parmağının üstüne diğer elin parmak ucunu getir.",
+    "detail": "Üstteki el nokta konumundadır.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          -0.13081885153628794,
+          1.4016101423262488,
+          -0.4058085937025032
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0.07183969811775451,
+          -1.4016101423262488,
+          -0.05091423259118533
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "J",
+    "tip": "Bir işaret parmağını dik tut; diğer elin kıvrık parmağını ucuna getir.",
+    "detail": "İki elin üstte kurduğu kıvrımı incele.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              8,
+              95,
+              40
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -60,
+          165
+        ],
+        "position": [
+          0.640302744535762,
+          1.5028836085020485,
+          -0.09588953884285262
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.3388894998508283,
+          -1.5028836085020485,
+          0.11231379672479244
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "K",
+    "tip": "İki bitişik parmağı dik tut; diğer elin iki açık parmağını yanına getir.",
+    "detail": "Dik çizgi ile yana açılan iki parmağı karşılaştır.",
+    "sourceVariant": "K2",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "position": [
+          1.125094546739959,
+          0.8050765519687068,
+          -0.08313853098908298
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.775938952673065,
+          -1.1542321460356009,
+          -0.35631953098908303
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "L",
+    "tip": "İşaret parmağını dik, başparmağını yana açık tut.",
+    "detail": "Diğer üç parmak avuca kapanır.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 12,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0.2593547886050958,
+          -0.904478594660759,
+          -0.2283614131468443
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.659354788605096,
+          -2.904478594660759,
+          -0.7283614131468443
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "M",
+    "tip": "İki elin işaret ve orta parmaklarını aşağı aç; içteki uçları buluştur.",
+    "detail": "Dört parmakla oluşan M biçimini takip et.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          -0.499308698004308,
+          0.9788749494460811,
+          -0.08335753098908297
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          0.49930869800430827,
+          0.9788749494460809,
+          -0.356100530989083
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "N",
+    "tip": "Bir elin iki parmağını, diğer elin işaret parmağını aşağı uzat.",
+    "detail": "Üç parmağın oluşturduğu N biçimini incele.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          -0.5708045368025166,
+          0.9699131044918339,
+          -0.2283614131468443
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          180
+        ],
+        "position": [
+          0.5708045368025169,
+          0.9878367944003281,
+          -0.2283614131468443
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "O",
+    "tip": "Baş ve işaret parmağının uçlarını birleştir; diğer üç parmağı açık tut.",
+    "detail": "Parmak uçları arasındaki halka görünür kalmalı.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -2,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -7,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -12,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -60,
+          0
+        ],
+        "position": [
+          0.15204964038651383,
+          -0.9846969364420001,
+          -0.10278926555167378
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.552049640386514,
+          -2.984696936442,
+          -0.6027892655516738
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "Ö",
+    "tip": "İki elin kıvrık baş ve işaret parmaklarını karşılıklı yaklaştır.",
+    "detail": "Yaklaşma hareketini yavaşlatarak inceleyebilirsin.",
+    "motion": "pinch",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          165
+        ],
+        "position": [
+          -0.2610354603447915,
+          1.071397840924087,
+          0.16033620778970165
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0.5,
+              0.5
+            ],
+            "spread": -17,
+            "oppose": 26
+          },
+          "index": {
+            "bend": [
+              43.5,
+              102,
+              47
+            ],
+            "spread": -18,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -65,
+          15
+        ],
+        "position": [
+          0.4638192865896753,
+          -1.071397840924087,
+          -0.3095704433526951
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "P",
+    "tip": "İşaret parmağını aşağı uzat; diğer parmakları kıvır.",
+    "detail": "Elin aşağı yönelmesine dikkat et.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -20,
+          165
+        ],
+        "position": [
+          0.24728272639978788,
+          0.9239262115879325,
+          -0.09468264555190893
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.647282726399788,
+          -1.0760737884120672,
+          -0.594682645551909
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "R",
+    "tip": "İki işaret parmağını birbirine kıvrım oluşturacak şekilde yaklaştır.",
+    "detail": "Temas noktasını yandan da incele.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              8,
+              95,
+              40
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          138
+        ],
+        "position": [
+          0.5927227470551424,
+          1.040769657616782,
+          -0.1333614131468443
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              8,
+              95,
+              40
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          42
+        ],
+        "position": [
+          0.1417227470551423,
+          -1.040769657616782,
+          -0.3233614131468443
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "S",
+    "tip": "İki elin C biçimlerini ters yönlerde birbirine bağla.",
+    "detail": "Üst ve alt kavisler birlikte görünür kalmalı.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          -10
+        ],
+        "position": [
+          -0.4088492494382474,
+          -1.3132832872268025,
+          0.24853577660990117
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          170
+        ],
+        "position": [
+          -0.049796687298174436,
+          1.313283287226802,
+          -0.4137119599266228
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "Ş",
+    "tip": "Üstteki C biçimini, alttaki elin işaret parmağıyla birleştir.",
+    "detail": "Alttaki elin konumu S harfinden farklıdır.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          65,
+          -10
+        ],
+        "position": [
+          -0.855672809768238,
+          -0.16847868624184792,
+          -0.0821726049676137
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 12,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          20
+        ],
+        "position": [
+          0.31510825747583104,
+          -1.3445977032441196,
+          0.06205859161657126
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "T",
+    "tip": "Dik işaret parmağının ucuna diğer işaret parmağını yatay yerleştir.",
+    "detail": "İki parmak T biçiminde birleşir.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "position": [
+          1.028555387357804,
+          0.9423592787733347,
+          -0.08424291314684433
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.6793997932909105,
+          -1.2915148728402284,
+          -0.37247991314684437
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "U",
+    "tip": "İşaret ve serçe parmağını açık tut; ortadaki iki parmağı kapat.",
+    "detail": "Açık iki parmak U biçimini oluşturur.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -15,
+          0
+        ],
+        "position": [
+          -0.016175841867034135,
+          -0.904478594660759,
+          -0.17585893935926256
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.383824158132966,
+          -2.904478594660759,
+          -0.6758589393592626
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "Ü",
+    "tip": "İki elin kıvrılmış parmaklarını üst ve alt konumda karşılaştır.",
+    "detail": "Kaynakta gösterilen iki el biçimini birlikte incele.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              25,
+              0,
+              0
+            ],
+            "spread": 15,
+            "oppose": 65
+          },
+          "index": {
+            "bend": [
+              20,
+              35,
+              30
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              95,
+              100,
+              65
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -65,
+          85
+        ],
+        "position": [
+          0.9337786397062118,
+          0.7349402555269845,
+          0.5915230001235603
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          -20,
+          0
+        ],
+        "position": [
+          -0.5407891368881478,
+          -1.1539552769434684,
+          0.08796569722390654
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "V",
+    "tip": "İşaret ve orta parmağını birbirinden açarak dik tut.",
+    "detail": "Diğer parmaklar avuca kapanır.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0.09007655196870723,
+          -0.978874949446081,
+          -0.21972903098908297
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          2.4900765519687074,
+          -2.9788749494460807,
+          -0.7197290309890829
+        ],
+        "visible": false
+      }
+    }
+  },
+  {
+    "ch": "Y",
+    "tip": "V biçiminin ortasına diğer elin işaret parmağını getir.",
+    "detail": "İkinci işaret parmağı ortadaki çizgiyi tamamlar.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0.15862784700371013,
+          -1.1811544466214463,
+          0.19788008685315567
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "position": [
+          -0.15862784700371013,
+          -0.7765954522707158,
+          -0.6546029131468444
+        ],
+        "visible": true
+      }
+    }
+  },
+  {
+    "ch": "Z",
+    "tip": "İki elin açık işaret ve orta parmaklarını yatay olarak karşılaştır.",
+    "detail": "Parmakların oluşturduğu zikzak biçimini takip et.",
+    "pose": {
+      "right": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          -90
+        ],
+        "position": [
+          -1.874391699152593,
+          -0.3775570473283766,
+          -0.09852053098908299
+        ],
+        "visible": true
+      },
+      "left": {
+        "shape": {
+          "thumb": {
+            "bend": [
+              0,
+              10,
+              65
+            ],
+            "spread": -65,
+            "oppose": 0
+          },
+          "index": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": 9,
+            "oppose": 0
+          },
+          "middle": {
+            "bend": [
+              0,
+              0,
+              0
+            ],
+            "spread": -9,
+            "oppose": 0
+          },
+          "ring": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          },
+          "pinky": {
+            "bend": [
+              88,
+              100,
+              55
+            ],
+            "spread": 0,
+            "oppose": 0
+          }
+        },
+        "rotation": [
+          0,
+          0,
+          90
+        ],
+        "position": [
+          1.8743916991525928,
+          0.19740394339096146,
+          -0.340937530989083
+        ],
+        "visible": true
+      }
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "torchvision": "0.21.0+cu124",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "Pillow": "12.3.0",
+    "scikit-learn": "1.6.1",
+    "opencv-python": "4.11.0.86",
+    "matplotlib": "3.10.1"
+  },
+  "file_sha256": {
+    "ml/training/tid_v6/audit.py": "f48d7ac39c07d34edf749a211a38bed674481213eb4f9bec4d3d76a9218a1832",
+    "ml/training/tid_v6/augment.py": "2f543e73d5b2a8a15ce419e21c0697a495f1487427f6fd569fbd95d82cdd8524",
+    "ml/training/tid_v6/gl_context.py": "01824899a50d6bdb6b362f52255d76ed67bd44beeb5dbe7bfb0eb9e7fa28fe72",
+    "ml/training/tid_v6/make_preview.py": "d1ca75516d6731b46a6f92d00993b873901e5f086e73e77b0fe6663f50cd8baa",
+    "ml/training/tid_v6/package_model.py": "68c8fd62a0664d7d67865de8dd1a3decf544fa201a492f20fd578e4bffa82fc5",
+    "ml/training/tid_v6/render_hands.py": "431fdd86d8ec4d271146ad4d286cbf861141c812d5c24acdf2da3e8e3fcc1f04",
+    "ml/training/tid_v6/test_training.py": "3ca4d7972cfe03b54b26f31ec1d6ddc8c06b01d55dd5e648063704c36415892f",
+    "ml/training/tid_v6/train.py": "89f001e76e0222e5c4d2b79cf97ed8478bd6390998d41ad87c0ffeeca21ceeb1",
+    "ml/training/tid_v6/export_hands.cjs": "16aeeaec4832428c19d4fa28d368ad132b9919365c3dbbb8bb5375858439a915",
+    "Digitra/digitra-tid-v4/src/cnn.py": "0d1c25da44c344e31bb46fb76d91ca7a941787ee68b580dc04d2aa9b09ecb49e",
+    "artifacts/tid-v6/data/manifest.csv": "bff31fb25b61f164f43ddeb8caae7cb37063538006bd77044125048dd746ae33",
+    "artifacts/tid-v6/synthetic/manifest.csv": "683a6ceb382dd980f68e7bc9afe037b0acebabfbfd824fef1b8acb0aefa697c8"
+  },
+  "teaching_hand_sources_unchanged": {
+    "approach-offsets.json": true,
+    "collision-surface.json": true,
+    "contact-guard.ts": true,
+    "hand-scene.tsx": true,
+    "motion.ts": true,
+    "poses.ts": true,
+    "rig-spec.json": true,
+    "rounded-hand.ts": true,
+    "surface-offsets.json": true,
+    "view-roll.json": true
+  },
+  "synthetic_source_sha256": {
+    "approach-offsets.json": "c5f58e75482a8b271ed2d6b73c9b65c4990a98e0be045502da5c78decff45cda",
+    "collision-surface.json": "35d795eef930687dfd1a1c8548226bd3f40b8e4804b38895073d4a3b83f9a5ca",
+    "contact-guard.ts": "0e6254b77c283c334a641f9532d21a74327c61112ca04f718805b03ecce52018",
+    "hand-scene.tsx": "3638c7987b2205be2733549a32650f977a989d28625f00244cc149f5a889af9e",
+    "motion.ts": "8cb91e86debaad9cc24dbf03729f301b19d9d06da7edbd58c28f1086e0dc9425",
+    "poses.ts": "a8859807255217736e90285803ce9534451c08bb2a17ad0c9c1e8bc813e4f7d8",
+    "rig-spec.json": "c781b61fa331fbfeccd30c97380664a0fa8a8fbd1bb1bf632feaaeccd7e00644",
+    "rounded-hand.ts": "e4b63750a9cc7213029576a6a5d5846ce3cf410c217e4175a2c4fd70c91f41e9",
+    "surface-offsets.json": "b9899bb8755a30f39a6a52445bc6fdf24cc720007ab1e22690066143595af44e",
+    "view-roll.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+}

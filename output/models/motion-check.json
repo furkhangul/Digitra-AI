@@ -1,0 +1,176 @@
+[
+ {
+  "letter": "A",
+  "from": "Z",
+  "worstCollision": -0.0005,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "B",
+  "from": "A",
+  "worstCollision": 0.0015,
+  "atSeconds": 0
+ },
+ {
+  "letter": "C",
+  "from": "B",
+  "worstCollision": 0.0055,
+  "atSeconds": 0
+ },
+ {
+  "letter": "Ç",
+  "from": "C",
+  "worstCollision": 0.005,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "D",
+  "from": "Ç",
+  "worstCollision": 0.0071,
+  "atSeconds": 0
+ },
+ {
+  "letter": "E",
+  "from": "D",
+  "worstCollision": 0.0007,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "F",
+  "from": "E",
+  "worstCollision": -0.0162,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "G",
+  "from": "F",
+  "worstCollision": -0.0141,
+  "atSeconds": 0
+ },
+ {
+  "letter": "Ğ",
+  "from": "G",
+  "worstCollision": -0.0023,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "H",
+  "from": "Ğ",
+  "worstCollision": -0.0011,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "I",
+  "from": "H",
+  "worstCollision": -0.0004,
+  "atSeconds": 0
+ },
+ {
+  "letter": "İ",
+  "from": "I",
+  "worstCollision": -0.012,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "J",
+  "from": "İ",
+  "worstCollision": -0.0098,
+  "atSeconds": 0
+ },
+ {
+  "letter": "K",
+  "from": "J",
+  "worstCollision": -0.0112,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "L",
+  "from": "K",
+  "worstCollision": -0.0097,
+  "atSeconds": 0
+ },
+ {
+  "letter": "M",
+  "from": "L",
+  "worstCollision": -0.0012,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "N",
+  "from": "M",
+  "worstCollision": -0.0018,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "O",
+  "from": "N",
+  "worstCollision": 0.0004,
+  "atSeconds": 0
+ },
+ {
+  "letter": "Ö",
+  "from": "O",
+  "worstCollision": 0.111,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "P",
+  "from": "Ö",
+  "worstCollision": 0.1132,
+  "atSeconds": 0
+ },
+ {
+  "letter": "R",
+  "from": "P",
+  "worstCollision": 0.002,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "S",
+  "from": "R",
+  "worstCollision": -0.002,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "Ş",
+  "from": "S",
+  "worstCollision": -0.0,
+  "atSeconds": 0
+ },
+ {
+  "letter": "T",
+  "from": "Ş",
+  "worstCollision": 0.0002,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "U",
+  "from": "T",
+  "worstCollision": 0.002,
+  "atSeconds": 0
+ },
+ {
+  "letter": "Ü",
+  "from": "U",
+  "worstCollision": 0.0086,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "V",
+  "from": "Ü",
+  "worstCollision": 0.0109,
+  "atSeconds": 0
+ },
+ {
+  "letter": "Y",
+  "from": "V",
+  "worstCollision": 0.0054,
+  "atSeconds": 1.333
+ },
+ {
+  "letter": "Z",
+  "from": "Y",
+  "worstCollision": 0.0023,
+  "atSeconds": 1.333
+ }
+]

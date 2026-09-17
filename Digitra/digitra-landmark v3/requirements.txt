@@ -1,0 +1,14 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+mediapipe
+optuna
+catboost
+lightgbm
+xgboost
+joblib
+tqdm
+seaborn
+matplotlib
+opencv-contrib-python

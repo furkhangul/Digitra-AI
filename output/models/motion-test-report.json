@@ -1,0 +1,9 @@
+{
+  "letters": 29,
+  "pairs": 841,
+  "frames": 151380,
+  "largestPositionStep": 0.2491637343332331,
+  "largestAngleStep": 26.4879014756947,
+  "modelBytes": 994484,
+  "passed": true
+}

@@ -1,0 +1,158 @@
+.section {
+  padding: 104px 0 112px;
+  scroll-margin-top: 100px;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.eyebrow, .kicker {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.eyebrow { display: flex; align-items: center; gap: 10px; color: var(--muted); margin-bottom: 22px; }
+.eyebrow > span { width: 7px; height: 7px; background: var(--secondary); border-radius: 50%; }
+.heading h2 { font-size: clamp(48px, 6.4vw, 84px); line-height: .99; letter-spacing: -.065em; font-weight: 600; }
+.heading h2 em { color: var(--primary); font-style: normal; }
+.headingAside { max-width: 360px; padding-bottom: 4px; }
+.headingAside > p { color: var(--muted); font-size: 17px; line-height: 1.75; }
+.headingNote { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--border); padding-top: 19px; margin-top: 25px; color: var(--muted); font-size: 11px; }
+.headingNote svg { color: var(--primary); flex-shrink: 0; }
+
+.grid { display: grid; grid-template-columns: 1.08fr 1fr; gap: 20px; }
+.grid > article { position: relative; min-width: 0; overflow: hidden; border-radius: 28px; padding: 30px; }
+.cardTop { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 25px; }
+.kicker { line-height: 1.5; }
+.grid h3 { font-size: clamp(26px, 2.65vw, 36px); line-height: 1.15; font-weight: 550; letter-spacing: -.045em; }
+.grid article > p { max-width: 410px; margin-top: 14px; font-size: 14px; line-height: 1.75; }
+.lightBadge, .darkBadge, .smallTag, .futureBadge { display: inline-flex; align-items: center; gap: 6px; border-radius: 30px; padding: 6px 9px; font-size: 9px; line-height: 1; font-weight: 500; white-space: nowrap; }
+.lightBadge { background: rgb(255 255 255 / .12); border: 1px solid rgb(255 255 255 / .18); color: #fff; }
+.darkBadge { background: rgb(17 58 43 / .07); border: 1px solid rgb(17 58 43 / .12); }
+.darkBadge > span { height: 5px; width: 5px; border-radius: 50%; background: #237352; }
+.smallTag { border: 1px solid var(--border); color: var(--muted); }
+.futureBadge { border: 1px solid rgb(199 153 71 / .35); background: rgb(199 153 71 / .1); color: var(--foreground); }
+
+.learnCard { grid-row: span 2; display: flex; flex-direction: column; background: #6a49e6; background-image: radial-gradient(ellipse at 75% 45%, #9675ff 0%, transparent 65%); color: #fff; }
+.learnCard .kicker { color: #e4dafa; }
+.learnCard h3 { font-size: clamp(34px, 3.2vw, 46px); }
+.learnDescription { color: #e7defb; }
+.preview { position: relative; display: flex; flex: 1; flex-direction: column; min-height: 330px; margin: 0 -8px; }
+.loading { display: grid; min-height: 330px; place-items: center; font-size: 13px; color: #e7defb; }
+.handStage { position: relative; flex: 1; min-height: 285px; isolation: isolate; }
+.backdropLetter { position: absolute; inset: 0; display: grid; place-items: center; color: rgb(255 255 255 / .09); font-size: clamp(190px, 22vw, 300px); font-weight: 600; line-height: 1; letter-spacing: -.06em; pointer-events: none; }
+.stageCaption { position: absolute; bottom: 4px; left: 8px; font-size: 10px; color: #e4dafa; pointer-events: none; }
+.previewControls { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 18px 8px 0; }
+.letterPicker { display: flex; gap: 6px; }
+.letterPicker button, .pauseButton { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid rgb(255 255 255 / .22); border-radius: 12px; background: rgb(255 255 255 / .06); color: #fff; cursor: pointer; transition: background 180ms, color 180ms; }
+.letterPicker button { font-size: 15px; font-weight: 550; }
+.letterPicker button:hover, .pauseButton:hover { background: rgb(255 255 255 / .18); }
+.letterPicker button[aria-pressed="true"] { border-color: #fff; background: #fff; color: #5c36ce; }
+.learnLink { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid rgb(255 255 255 / .22); margin-top: 26px; padding-top: 19px; font-size: 13px; font-weight: 500; }
+
+.practiceCard { background: #ccf4dc; color: #153b2e; }
+.practiceCard > p { color: #375d4d; }
+.wordExample { display: flex; align-items: center; gap: 20px; margin: 22px 0 24px; }
+.wordTiles { display: flex; flex-shrink: 0; gap: 5px; }
+.wordTiles > span { position: relative; display: grid; place-items: center; width: 38px; height: 43px; border: 1px solid rgb(21 59 46 / .13); border-radius: 9px; font-size: 18px; color: #608372; }
+.wordTiles .completedLetter { background: rgb(255 255 255 / .4); color: #153b2e; }
+.completedLetter svg { position: absolute; top: 3px; right: 3px; }
+.wordTiles .currentLetter { background: #153b2e; border-color: #153b2e; color: #e0fae9; }
+.exampleCaption { font-size: 10px; color: #476e5c; line-height: 1.7; }
+.exampleCaption strong { font-weight: 500; color: #153b2e; }
+.darkLink, .textLink { display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 12px; font-weight: 600; }
+.darkLink { border-bottom: 1px solid rgb(21 59 46 / .3); padding-bottom: 5px; }
+
+.dataCard, .voiceCard { border: 1px solid var(--border); background: var(--surface); }
+.dataCard .kicker, .voiceCard .kicker { color: var(--muted); }
+.dataCard > p, .voiceCard > p { color: var(--muted); }
+.dataFlow { display: flex; align-items: center; gap: 12px; margin: 24px 0 22px; }
+.dataFlow > div { flex: 1; min-width: 0; padding: 13px 15px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
+.dataFlow div span { display: block; font-size: 10px; color: var(--muted); margin-bottom: 5px; }
+.dataFlow strong { font-size: 12px; font-weight: 500; }
+.flowDivider { color: var(--primary); font-size: 20px; font-weight: 300; }
+.textLink { color: var(--primary); }
+
+.voiceCard { padding-bottom: 24px; }
+.voiceExample { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 28px 0 24px; padding: 24px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.voiceExample > span { display: flex; align-items: center; gap: 7px; font-size: 35px; font-weight: 500; letter-spacing: -.04em; }
+.textCursor { width: 2px; height: 31px; background: var(--primary); }
+.waveform { display: flex; align-items: center; gap: 4px; color: var(--primary); }
+.waveform i { display: block; width: 3px; border-radius: 3px; background: currentColor; opacity: .7; }
+
+.futureCard { border: 1px solid var(--border); background: color-mix(in srgb, var(--warning) 5%, var(--surface)); }
+.futureCard .kicker, .futureCard > p { color: var(--muted); }
+.futureNote { display: flex; align-items: center; gap: 15px; margin-top: 32px; padding-top: 23px; border-top: 1px solid var(--border); font-size: 12px; line-height: 1.6; }
+.futureMark { display: grid; place-items: center; flex-shrink: 0; width: 46px; height: 46px; border: 1px solid var(--border); border-radius: 14px; font-size: 25px; font-weight: 300; color: var(--warning); }
+.futureNote small { display: block; margin-top: 4px; font-size: 10px; color: var(--muted); }
+
+.section a { text-decoration: none; }
+.section a:hover { opacity: .8; }
+.section a:focus-visible, .section button:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; }
+.learnCard a:focus-visible, .learnCard button:focus-visible { outline-color: #fff; }
+.practiceCard a:focus-visible { outline-color: #153b2e; }
+
+@media (max-width: 1023px) {
+  .section { padding: 80px 0; }
+  .heading { gap: 32px; }
+  .headingAside { max-width: 300px; }
+  .headingAside > p { font-size: 15px; }
+  .grid { gap: 16px; }
+  .grid > article { padding: 24px; border-radius: 24px; }
+  .cardTop { gap: 8px; margin-bottom: 20px; }
+  .kicker { font-size: 9px; }
+  .wordExample { flex-wrap: wrap; gap: 12px; }
+  .dataFlow { gap: 8px; }
+  .dataFlow > div { padding: 12px 10px; }
+  .dataFlow strong { font-size: 11px; }
+  .letterPicker { gap: 4px; }
+  .letterPicker button, .pauseButton { width: 34px; height: 38px; border-radius: 10px; }
+  .voiceExample > span { font-size: 30px; }
+  .waveform { gap: 3px; }
+}
+
+@media (max-width: 700px) {
+  .section { padding: 64px 0; scroll-margin-top: 85px; }
+  .heading { display: block; margin-bottom: 28px; }
+  .heading h2 { font-size: clamp(44px, 15vw, 60px); }
+  .eyebrow { margin-bottom: 20px; }
+  .headingAside { max-width: 100%; margin-top: 24px; }
+  .headingAside > p { max-width: 340px; font-size: 15px; line-height: 1.7; }
+  .headingNote { margin-top: 18px; padding-top: 15px; font-size: 10px; }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .learnCard { grid-row: auto; }
+  .grid > article { padding: 23px; }
+  .grid h3 { font-size: 31px; }
+  .learnCard h3 { font-size: 37px; }
+  .grid article > p { font-size: 13px; }
+  .preview { min-height: 310px; }
+  .handStage { min-height: 250px; }
+  .backdropLetter { font-size: 220px; }
+  .letterPicker { gap: 6px; }
+  .letterPicker button, .pauseButton { width: 37px; height: 40px; }
+  .lightBadge, .darkBadge, .smallTag, .futureBadge { font-size: 8px; }
+  .wordExample { flex-wrap: nowrap; gap: 12px; }
+  .wordTiles > span { width: 33px; height: 39px; }
+  .exampleCaption { font-size: 9px; }
+  .dataFlow { margin: 20px 0; }
+  .dataFlow strong { font-size: 12px; }
+  .voiceExample { padding: 19px 0; }
+  .futureNote { margin-top: 25px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .letterPicker button, .pauseButton { transition: none; }
+}
+
+@media (max-width: 360px) {
+  .letterPicker { gap: 4px; }
+  .letterPicker button, .pauseButton { width: 32px; }
+  .wordExample { flex-wrap: wrap; }
+}

@@ -1,0 +1,34 @@
+{
+  "one_hand_asl": {
+    "classes": "0-9 and A-Z",
+    "base_signer_split": {
+      "train": "P1-P7",
+      "validation": "P8",
+      "test": "P9-P10",
+      "test_accuracy": 0.8470833333333333,
+      "test_macro_f1": 0.8357506166038029
+    },
+    "personal_adaptation": {
+      "person": "FURKAN",
+      "adapted_labels": ["I", "P", "R", "T", "U", "V", "W", "K", "Y"],
+      "evaluation_scope": "single-person, same-session chronological holdout",
+      "accuracy": 0.9943820224719101,
+      "macro_f1": 0.9944409700507263,
+      "source_validation_accuracy_after_adaptation": 0.8108258928571429
+    }
+  },
+  "two_hand_tid_specials": {
+    "classes": ["Ç", "Ğ", "İ", "Ö", "Ş", "Ü"],
+    "sequences_per_class": 30,
+    "evaluation_scope": "single-person, single-session chronological holdout; not cross-person accuracy",
+    "test_samples": 42,
+    "test_accuracy": 1.0,
+    "test_macro_f1": 1.0,
+    "latest_guided_live_result": {
+      "accepted": 5,
+      "total": 6,
+      "rate": 0.8333333333333334,
+      "known_rejection": "Ç"
+    }
+  }
+}

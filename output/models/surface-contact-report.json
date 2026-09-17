@@ -1,0 +1,575 @@
+{
+  "note": "Surface distances in palm-length units (1.0 = wrist to middle knuckle). Negative means the two surfaces overlap.",
+  "thresholds": {
+    "penetration": -0.02,
+    "gap": 0.06
+  },
+  "geometry": {
+    "vertices": 11262,
+    "faces": 22520,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "bones": 21,
+    "actions": 51,
+    "vertexGroups": 16,
+    "weightSumRange": [
+      0.9998149275779724,
+      1.0000000447034836
+    ],
+    "fingerBoundFraction": 0.559
+  },
+  "contact": [
+    {
+      "letter": "A",
+      "hands": 2,
+      "contactAnchors": [
+        "index_1",
+        "index_2"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0015,
+      "contactError": -0.0015,
+      "worstCollision": -0.0015,
+      "deepestOtherCollision": 0.0037,
+      "rightCenterX": 0.599,
+      "leftCenterX": -0.1415,
+      "sideOrder": true,
+      "samples": 11858,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "B",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0056,
+      "contactError": 0.0056,
+      "worstCollision": 0.0038,
+      "deepestOtherCollision": 0.0038,
+      "rightCenterX": 0.5344,
+      "leftCenterX": -0.4681,
+      "sideOrder": true,
+      "samples": 11810,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "C",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "Ç",
+      "hands": 2,
+      "contactAnchors": [
+        "wrist",
+        "wrist"
+      ],
+      "targetContactGap": 0.09,
+      "intendedContactGap": 0.1016,
+      "contactError": 0.0116,
+      "worstCollision": 0.0907,
+      "deepestOtherCollision": 0.0907,
+      "rightCenterX": 0.3176,
+      "leftCenterX": -0.2705,
+      "sideOrder": true,
+      "samples": 11703,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "D",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0009,
+      "contactError": 0.0009,
+      "worstCollision": 0.0009,
+      "deepestOtherCollision": 0.0809,
+      "rightCenterX": 0.6186,
+      "leftCenterX": -0.5497,
+      "sideOrder": true,
+      "samples": 11748,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "E",
+      "hands": 2,
+      "contactAnchors": [
+        "index_0",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0011,
+      "contactError": -0.0011,
+      "worstCollision": -0.0011,
+      "deepestOtherCollision": 0.0009,
+      "rightCenterX": -0.156,
+      "leftCenterX": -0.3838,
+      "sideOrder": true,
+      "samples": 11878,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "F",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_1"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0002,
+      "contactError": -0.0002,
+      "worstCollision": -0.0158,
+      "deepestOtherCollision": -0.0158,
+      "rightCenterX": 0.4512,
+      "leftCenterX": -0.3596,
+      "sideOrder": true,
+      "samples": 11811,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "G",
+      "hands": 2,
+      "contactAnchors": [
+        "thumb_tip",
+        "thumb_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0013,
+      "contactError": 0.0013,
+      "worstCollision": 0.0013,
+      "deepestOtherCollision": 0.1356,
+      "rightCenterX": 0.4331,
+      "leftCenterX": -0.4356,
+      "sideOrder": true,
+      "samples": 11552,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "Ğ",
+      "hands": 2,
+      "contactAnchors": [
+        "thumb_tip",
+        "thumb_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0013,
+      "contactError": 0.0013,
+      "worstCollision": 0.0013,
+      "deepestOtherCollision": 0.1356,
+      "rightCenterX": 0.5209,
+      "leftCenterX": -0.3478,
+      "sideOrder": true,
+      "samples": 11552,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "H",
+      "hands": 2,
+      "contactAnchors": [
+        "index_2",
+        "index_1"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0004,
+      "contactError": 0.0004,
+      "worstCollision": -0.0006,
+      "deepestOtherCollision": -0.0006,
+      "rightCenterX": 0.1662,
+      "leftCenterX": -0.6588,
+      "sideOrder": true,
+      "samples": 11808,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "I",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "İ",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0036,
+      "contactError": -0.0036,
+      "worstCollision": -0.0036,
+      "deepestOtherCollision": 0.1786,
+      "rightCenterX": 0.0974,
+      "leftCenterX": -0.0539,
+      "sideOrder": true,
+      "samples": 11753,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "J",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0007,
+      "contactError": -0.0007,
+      "worstCollision": -0.0007,
+      "deepestOtherCollision": 0.1684,
+      "rightCenterX": 0.2717,
+      "leftCenterX": -0.1972,
+      "sideOrder": true,
+      "samples": 11682,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "K",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "middle_1"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0044,
+      "contactError": -0.0044,
+      "worstCollision": -0.0047,
+      "deepestOtherCollision": -0.0047,
+      "rightCenterX": 0.2864,
+      "leftCenterX": -0.8587,
+      "sideOrder": true,
+      "samples": 11948,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "L",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "M",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0021,
+      "contactError": -0.0021,
+      "worstCollision": -0.0021,
+      "deepestOtherCollision": 0.084,
+      "rightCenterX": 0.5477,
+      "leftCenterX": -0.5477,
+      "sideOrder": true,
+      "samples": 11984,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "N",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0011,
+      "contactError": 0.0011,
+      "worstCollision": 0.0011,
+      "deepestOtherCollision": 0.1908,
+      "rightCenterX": 0.6186,
+      "leftCenterX": -0.6926,
+      "sideOrder": true,
+      "samples": 11857,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "O",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "Ö",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.11,
+      "intendedContactGap": 0.1083,
+      "contactError": -0.0017,
+      "worstCollision": 0.1076,
+      "deepestOtherCollision": 0.1076,
+      "rightCenterX": 0.4193,
+      "leftCenterX": -0.3531,
+      "sideOrder": true,
+      "samples": 11810,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "P",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "R",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0006,
+      "contactError": 0.0006,
+      "worstCollision": 0.0006,
+      "deepestOtherCollision": 0.0008,
+      "rightCenterX": 0.054,
+      "leftCenterX": -0.1967,
+      "sideOrder": true,
+      "samples": 11660,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "S",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "thumb_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0046,
+      "contactError": 0.0046,
+      "worstCollision": 0.0046,
+      "deepestOtherCollision": 0.0908,
+      "rightCenterX": 0.2888,
+      "leftCenterX": -0.2023,
+      "sideOrder": true,
+      "samples": 11512,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "Ş",
+      "hands": 2,
+      "contactAnchors": [
+        "thumb_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0069,
+      "contactError": -0.0069,
+      "worstCollision": -0.0069,
+      "deepestOtherCollision": 0.1927,
+      "rightCenterX": -0.0791,
+      "leftCenterX": -0.2634,
+      "sideOrder": true,
+      "samples": 11689,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "T",
+      "hands": 2,
+      "contactAnchors": [
+        "index_1",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0009,
+      "contactError": -0.0009,
+      "worstCollision": -0.0009,
+      "deepestOtherCollision": 0.1566,
+      "rightCenterX": 0.1771,
+      "leftCenterX": -0.6336,
+      "sideOrder": true,
+      "samples": 11695,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "U",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "Ü",
+      "hands": 2,
+      "contactAnchors": [
+        "thumb_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": -0.0191,
+      "contactError": -0.0191,
+      "worstCollision": -0.0191,
+      "deepestOtherCollision": 0.2291,
+      "rightCenterX": -0.0223,
+      "leftCenterX": -0.3142,
+      "sideOrder": true,
+      "samples": 11743,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "V",
+      "hands": 1,
+      "intendedContactGap": null,
+      "deepestOtherCollision": null,
+      "sideOrder": null,
+      "status": "single-hand"
+    },
+    {
+      "letter": "Y",
+      "hands": 2,
+      "contactAnchors": [
+        "index_tip",
+        "middle_1"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0003,
+      "contactError": 0.0003,
+      "worstCollision": 0.0003,
+      "deepestOtherCollision": 0.0005,
+      "rightCenterX": 0.3362,
+      "leftCenterX": -0.281,
+      "sideOrder": true,
+      "samples": 11824,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    },
+    {
+      "letter": "Z",
+      "hands": 2,
+      "contactAnchors": [
+        "middle_tip",
+        "index_tip"
+      ],
+      "targetContactGap": 0.0,
+      "intendedContactGap": 0.0001,
+      "contactError": 0.0001,
+      "worstCollision": 0.0001,
+      "deepestOtherCollision": 0.3929,
+      "rightCenterX": 0.896,
+      "leftCenterX": -0.896,
+      "sideOrder": true,
+      "samples": 11966,
+      "contactOK": true,
+      "collisionOK": true,
+      "status": "contact-ok"
+    }
+  ],
+  "motionSampled": [
+    {
+      "letter": "A",
+      "from": "Z",
+      "worstCollision": -0.0015,
+      "atSeconds": 1.333
+    },
+    {
+      "letter": "E",
+      "from": "D",
+      "worstCollision": 0.0057,
+      "atSeconds": 1.333
+    },
+    {
+      "letter": "G",
+      "from": "F",
+      "worstCollision": -0.0141,
+      "atSeconds": 0
+    },
+    {
+      "letter": "Ğ",
+      "from": "G",
+      "worstCollision": 0.0,
+      "atSeconds": 2.333
+    },
+    {
+      "letter": "M",
+      "from": "L",
+      "worstCollision": 0.0042,
+      "atSeconds": 1.333
+    },
+    {
+      "letter": "N",
+      "from": "M",
+      "worstCollision": 0.0011,
+      "atSeconds": 1.333
+    },
+    {
+      "letter": "Z",
+      "from": "Y",
+      "worstCollision": -0.0022,
+      "atSeconds": 1.333
+    }
+  ],
+  "motionSampledNote": "every 4th frame of the transition into each letter, full-surface sampling",
+  "summary": {
+    "pairLetters": 22,
+    "transitionsScanned": 7,
+    "transitionsColliding": [],
+    "worstDuringTransition": -0.0141,
+    "penetrating": [],
+    "contactMisaligned": [],
+    "wrongSideOrder": [],
+    "worstCollision": -0.0191,
+    "deepestOtherCollision": -0.0158
+  }
+}

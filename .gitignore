@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+credentials*
+*.key
+*.pem
+
+# Node
+node_modules/
+.next/
+out/
+apps/web/.next/
+apps/web/node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+apps/api/.venv/
+apps/api/.venv-digitra/
+.pytest_cache/
+
+# Large / regenerable tool caches (push dışı)
+ml/notebooks/.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

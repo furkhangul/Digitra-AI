@@ -1,0 +1,65 @@
+{
+  "name": "DIGITRA_V3_HYBRID_9415",
+  "files": {
+    "hand_landmarker.task": {
+      "bytes": 7819105,
+      "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+    },
+    "inference.py": {
+      "bytes": 12857,
+      "sha256": "673b7f732f322856dcf5d0ab16b194e6ff8fdfff08154e8d949e2ddbafaa442a"
+    },
+    "landmark/development_metrics.json": {
+      "bytes": 5071,
+      "sha256": "11950721e6749ee5474cb05cfd63e776201d9b84203223f8c77c60bf5a3fa2b6"
+    },
+    "landmark/extra_trees.joblib": {
+      "bytes": 6343548,
+      "sha256": "65be5527b14d9dec77d73f86657843ac2ae4aa3487ff3c3e8a1358a77ff9b792"
+    },
+    "landmark/feature_scaler.joblib": {
+      "bytes": 10743,
+      "sha256": "b290424dc5e371a3c6c02e2e6b1c41c6bb96e8c0595e6c643014746b65e2162b"
+    },
+    "landmark/neural_ensemble.pt": {
+      "bytes": 12226856,
+      "sha256": "2cb97009d164a7fbb479ec9aa59adbdb1b97ed612ba148c467033edd9a471be3"
+    },
+    "landmark/pair_experts.joblib": {
+      "bytes": 52977,
+      "sha256": "dd309f6667669d68a0b1aa694aa370a2b77e016b850d5dec72d0f14b025a2f18"
+    },
+    "landmark/rbf_svc.joblib": {
+      "bytes": 2668041,
+      "sha256": "f50d3362561fabe1156e7b6022fa88ddc788c0f93177a0b1d713db38e8d957b7"
+    },
+    "model_config.json": {
+      "bytes": 1471,
+      "sha256": "bf3d2b411cfefce7258652205dcc344d9c13c76482f355f7527fac9e7ed68fcf"
+    },
+    "requirements.txt": {
+      "bytes": 66,
+      "sha256": "32ad9430ebaafee4a037367d42747dbfbb2a241431adca73942342013241baf7"
+    },
+    "rgb/best_model_state.pt": {
+      "bytes": 342701937,
+      "sha256": "b71a93306379d6fe33a419aa13d3992c7064fab812210459ee2fbee26cfa41ae"
+    },
+    "rgb/development_metrics.json": {
+      "bytes": 949,
+      "sha256": "18c9756e7d67865b3d6051bd9d64b85b32e51661720184eb268cbcce5aac9545"
+    },
+    "router/development_metrics.json": {
+      "bytes": 315,
+      "sha256": "ecfc2f93dfb2961f175a4e6b34ff43f89ff25a5b46ce5bdcfe0ec73c204f2dea"
+    },
+    "router/router_config.json": {
+      "bytes": 529,
+      "sha256": "8f89a27063ec040592c027ec92baaa60e2cd37ca229427ffcf628b8f6db969d4"
+    },
+    "router/ru_specialist_p1_p7.joblib": {
+      "bytes": 13246,
+      "sha256": "024bd5850955e0cc486f7999c3aeb762ade3a8860dc62ff057e46d343a40f757"
+    }
+  }
+}

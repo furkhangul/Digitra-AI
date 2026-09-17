@@ -1,0 +1,98 @@
+{
+  "objects": [
+    {
+      "name": "Digitra_AnatomicalHand",
+      "vertices": 25778,
+      "faces": 25776,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "weightSumRange": [
+        0.9999999552965164,
+        1.0000000447034836
+      ],
+      "modifiers": [
+        [
+          "Articulated skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "Left_hand_surface",
+      "vertices": 25778,
+      "faces": 25776,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "weightSumRange": [
+        0.9999999552965164,
+        1.0000000447034836
+      ],
+      "modifiers": [
+        [
+          "Articulated skin",
+          "ARMATURE"
+        ]
+      ]
+    }
+  ],
+  "actions": [
+    "TID_01_A_left",
+    "TID_01_A_right",
+    "TID_02_B_left",
+    "TID_02_B_right",
+    "TID_03_C_left",
+    "TID_03_C_right",
+    "TID_04_\u00c7_left",
+    "TID_04_\u00c7_right",
+    "TID_05_D_left",
+    "TID_05_D_right",
+    "TID_06_E_left",
+    "TID_06_E_right",
+    "TID_07_F_left",
+    "TID_07_F_right",
+    "TID_08_G_left",
+    "TID_08_G_right",
+    "TID_09_\u011e_left",
+    "TID_09_\u011e_right",
+    "TID_10_H_left",
+    "TID_10_H_right",
+    "TID_11_I_left",
+    "TID_11_I_right",
+    "TID_12_\u0130_left",
+    "TID_12_\u0130_right",
+    "TID_13_J_left",
+    "TID_13_J_right",
+    "TID_14_K_left",
+    "TID_14_K_right",
+    "TID_15_L_left",
+    "TID_15_L_right",
+    "TID_16_M_left",
+    "TID_16_M_right",
+    "TID_17_N_left",
+    "TID_17_N_right",
+    "TID_18_O_left",
+    "TID_18_O_right",
+    "TID_19_\u00d6_left",
+    "TID_19_\u00d6_right",
+    "TID_20_P_left",
+    "TID_20_P_right",
+    "TID_21_R_left",
+    "TID_21_R_right",
+    "TID_22_S_left",
+    "TID_22_S_right",
+    "TID_23_\u015e_left",
+    "TID_23_\u015e_right",
+    "TID_24_T_left",
+    "TID_24_T_right",
+    "TID_25_U_left",
+    "TID_25_U_right",
+    "TID_26_\u00dc_left",
+    "TID_26_\u00dc_right",
+    "TID_27_V_left",
+    "TID_27_V_right",
+    "TID_28_Y_left",
+    "TID_28_Y_right",
+    "TID_29_Z_left",
+    "TID_29_Z_right"
+  ]
+}
