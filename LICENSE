@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-
-Scope note
-
-The MIT License above covers the source code in this repository. The trained
-model weights under models/ were produced from a dataset licensed under
-CC BY-NC-SA 4.0 and are therefore provided for research and non-commercial use
-only, under the same terms (https://creativecommons.org/licenses/by-nc-sa/4.0/).
-The 3D hand asset in apps/web/public/models/ is derived from the WebXR Input
-Profiles generic-hand asset (MIT, Copyright (c) 2019 Amazon); see
-apps/web/public/models/THIRD_PARTY_HAND_LICENSE.md.
