@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤟 Digitra AI
+# Digitra AI
 
 ### Ellerle öğren. Harflerle anlat.
 
