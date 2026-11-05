@@ -9,6 +9,7 @@ import { LogoMark } from "@/components/site/logo";
 import { TID_ALPHABET } from "@/components/tid/poses";
 import { cn } from "@/lib/utils";
 import { TID_API_BASE, TID_MODEL_NAME } from "@/lib/recognition-config";
+import { recommendLetters, recordAttempt, useLearningProgress } from "@/lib/learning-progress";
 import styles from "./digitra-training.module.css";
 
 const HandScene = dynamic(() => import("@/components/tid/hand-scene"), {
@@ -45,6 +46,9 @@ export function FingerspellingTraining() {
   const [replay, setReplay] = useState(0);
   const advanceRef = useRef(false);
   const timerRef = useRef<number | null>(null);
+  // One miss per letter position, however many wrong guesses it takes.
+  const missedRef = useRef<string | null>(null);
+  const progress = useLearningProgress();
 
   const lesson = LESSONS[level];
   const word = lesson.words[wordIndex];
@@ -110,6 +114,8 @@ export function FingerspellingTraining() {
 
   const skipLetter = () => {
     if (advanceRef.current) return;
+    if (missedRef.current !== `${wordIndex}:${letterIndex}`) recordAttempt(expected, false);
+    missedRef.current = null;
     if (letterIndex === letters.length - 1) {
       nextWord();
     } else {
@@ -121,10 +127,14 @@ export function FingerspellingTraining() {
 
   const handleLetter = (letter: string) => {
     if (!practicing || !cameraRunning || advanceRef.current) return;
+    const position = `${wordIndex}:${letterIndex}`;
     if (letter.toLocaleUpperCase("tr-TR") !== expected) {
+      if (missedRef.current !== position) { missedRef.current = position; recordAttempt(expected, false); }
       setFeedback("wrong");
       return;
     }
+    if (missedRef.current !== position) recordAttempt(expected, true);
+    missedRef.current = null;
     advanceRef.current = true;
     setCorrect((value) => value + 1);
     const lastLetter = letterIndex === letters.length - 1;
@@ -254,6 +264,11 @@ export function FingerspellingTraining() {
           <div className={styles.trophy}><Trophy size={42} strokeWidth={1.4} /></div>
           <p className={styles.eyebrow}>ÇALIŞMA TAMAMLANDI</p><h1>Ellerine sağlık<span>!</span></h1>
           <p>{lesson.name} çalışmasının sonuna geldin.</p>
+          {recommendLetters(progress).some((item) => item.reason !== "Henüz çalışılmadı") && (
+            <p className={styles.smallNote}>
+              Tekrar etmen önerilen harfler: {recommendLetters(progress).filter((item) => item.reason !== "Henüz çalışılmadı").map((item) => `${item.letter} (${item.reason})`).join(", ")}
+            </p>
+          )}
           <div className={styles.results}><div><strong>{points}</strong><span>puan</span></div><div><strong>{completedWords}/{lesson.words.length}</strong><span>tamamlanan kelime</span></div><div><strong>{formatTime(seconds)}</strong><span>çalışma süresi</span></div></div>
           <div className={styles.resultActions}><button className={styles.secondaryButton} onClick={() => { resetRound(); setScreen("practice"); }}><RotateCcw size={16} /> Tekrar çalış</button><button className={styles.primaryButton} onClick={() => navigate("levels")}>Çalışmalar <ArrowRight size={18} /></button></div>
         </section>}

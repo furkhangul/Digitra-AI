@@ -6,11 +6,12 @@ import { Container, Section } from "@/components/ui/container";
 import { Reveal, RevealGroup, revealItem } from "@/components/ui/reveal";
 import { Badge } from "@/components/ui/badge";
 
+// Source: models/digitra-tid-augmented-v6/evaluation.json (locked test split).
 const METRICS = [
-  { icon: BarChart3, label: "%90,26 · Test doğruluğu" },
-  { icon: Layers3, label: "%90,23 · Test macro F1" },
-  { icon: Timer, label: "20,4 ms · Model gecikmesi (medyan)" },
-  { icon: Zap, label: "431 · Gerçek test görüntüsü" },
+  { icon: BarChart3, value: "%90,26", label: "Test doğruluğu", note: "%95 GA: %87,2–%93,0" },
+  { icon: Layers3, value: "%90,23", label: "Test macro F1", note: "29 harf ortalaması" },
+  { icon: Timer, value: "20,4 ms", label: "Model gecikmesi", note: "Medyan · p95 31,4 ms" },
+  { icon: Zap, value: "431", label: "Gerçek test görüntüsü", note: "Eğitimde kullanılmadı" },
 ];
 
 export function LiveStatistics() {
@@ -46,15 +47,9 @@ export function LiveStatistics() {
                     className="rounded-2xl border border-border bg-surface p-5"
                   >
                     <metric.icon size={18} className="text-primary" strokeWidth={1.75} />
-                    <div className="mt-4 h-8 w-20 overflow-hidden rounded-md bg-surface-2">
-                      <motion.div
-                        className="h-full w-1/3"
-                        style={{ background: "var(--grad-primary)", opacity: 0.5 }}
-                        animate={{ x: ["-100%", "260%"] }}
-                        transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                      />
-                    </div>
-                    <p className="mt-3 text-xs leading-snug text-muted">{metric.label}</p>
+                    <p className="mt-4 text-3xl font-semibold tracking-tight tabular-nums sm:text-4xl">{metric.value}</p>
+                    <p className="mt-1 text-sm font-medium">{metric.label}</p>
+                    <p className="mt-1 text-xs leading-snug text-muted">{metric.note}</p>
                   </motion.div>
                 ))}
               </RevealGroup>

@@ -1,5 +1,0 @@
-original: 994
-2x: 352
-3x: 357
-2x_clahe: 311
-2x_clahe_sharp: 103

@@ -18,6 +18,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { HAND_DETECTION_OPTIONS, StableHandDetections } from "@/lib/hand-detection";
 import { HandCropTracker } from "@/lib/hand-crop";
+import { onCommand, publishRecognition } from "@/lib/assistant-bus";
+import { coachHands } from "@/lib/hand-coaching";
+import { TID_ALPHABET } from "@/components/tid/poses";
+import { speak as speakText } from "@/lib/speech";
 import cameraStyles from "./training-camera.module.css";
 
 const CONNECTIONS: [number, number][] = [
@@ -61,6 +65,9 @@ type RecognitionResult = {
 
 type CameraState = "idle" | "loading" | "running" | "error";
 type ConnectionState = "idle" | "connecting" | "open" | "closed";
+
+// A framing hint must hold this long before it is shown, so it never flickers.
+const COACH_SETTLE_MS = 500;
 
 const HAND_CROP_SIZE = 320;
 const MODEL_SEND_INTERVAL_MS = 110;
@@ -109,6 +116,7 @@ export function LiveRecognition({
   onRunningChange,
   expectedLetter,
   variant = "default",
+  autoStart = false,
 }: {
   apiBase?: string;
   modelName?: string;
@@ -116,6 +124,8 @@ export function LiveRecognition({
   onRunningChange?: (running: boolean) => void;
   expectedLetter?: string;
   variant?: "default" | "training";
+  /** Start the camera as soon as the component mounts (voice assistant). */
+  autoStart?: boolean;
 } = {}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -140,6 +150,9 @@ export function LiveRecognition({
   const [cameraState, setCameraState] = useState<CameraState>("idle");
   const [connectionState, setConnectionState] = useState<ConnectionState>("idle");
   const [result, setResult] = useState<RecognitionResult>(EMPTY_RESULT);
+  const [coachHint, setCoachHint] = useState<string | null>(null);
+  const coachRef = useRef<{ hint: string | null; since: number; shown: string | null }>({ hint: null, since: 0, shown: null });
+  const twoHandedRef = useRef<boolean | null>(null);
   const [fps, setFps] = useState<number | null>(null);
   const [error, setError] = useState("");
 
@@ -166,6 +179,8 @@ export function LiveRecognition({
     }
     setCameraState("idle");
     onRunningChange?.(false);
+    coachRef.current = { hint: null, since: 0, shown: null };
+    setCoachHint(null);
     setFps(null);
     clearCanvas();
   }, [clearCanvas, onRunningChange]);
@@ -404,6 +419,10 @@ export function LiveRecognition({
         video.videoWidth / video.videoHeight,
       );
       drawLandmarks(output);
+      const hint = coachHands(output.landmarks.slice(0, 2), twoHandedRef.current, video.videoWidth / video.videoHeight);
+      const coach = coachRef.current;
+      if (hint !== coach.hint) { coach.hint = hint; coach.since = now; }
+      else if (hint !== coach.shown && now - coach.since >= COACH_SETTLE_MS) { coach.shown = hint; setCoachHint(hint); }
       const hands = serializeHands(output);
       if (recognitionModeRef.current !== "alphabet") {
         motionFramesRef.current.push({ timestamp_ms: now, hands });
@@ -486,12 +505,35 @@ export function LiveRecognition({
   }, []);
 
   const speak = useCallback(() => {
-    if (!result.text || !("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(result.text);
-    utterance.lang = "tr-TR";
-    window.speechSynthesis.speak(utterance);
+    if (result.text) speakText(result.text);
   }, [result.text]);
+
+  useEffect(() => {
+    publishRecognition({ text: result.text ?? "", prediction: result.prediction ?? null, model: result.version ?? modelName });
+  }, [result.text, result.prediction, result.version, modelName]);
+
+  const startRef = useRef(start);
+  useEffect(() => { startRef.current = start; }, [start]);
+  useEffect(() => onCommand((command) => {
+    if (command.type === "camera") {
+      if (command.on) { if (!runningRef.current) void startRef.current(); }
+      else stop();
+    } else if (command.type === "text") {
+      sendAction(command.op);
+    }
+  }), [sendAction, stop]);
+
+  useEffect(() => {
+    const target = expectedLetter ? TID_ALPHABET.find((letter) => letter.ch === expectedLetter) : undefined;
+    twoHandedRef.current = target ? target.pose.left.visible && target.pose.right.visible : null;
+  }, [expectedLetter]);
+
+  const autoStartedRef = useRef(false);
+  useEffect(() => {
+    if (!autoStart || autoStartedRef.current) return;
+    autoStartedRef.current = true;
+    void startRef.current();
+  }, [autoStart]);
 
   const confidence = result.confidence ?? 0;
   const displayedLetter = result.prediction ?? (result.candidate === "?" ? "—" : result.candidate) ?? "—";
@@ -519,6 +561,7 @@ export function LiveRecognition({
     const trainingHint = !result.hands_detected ? "El görünmüyor; ellerini kadraja getir."
       : dynamicTarget && result.hands_detected < 2 ? "Hareket için iki elin de görünmesi gerekiyor."
       : result.ready && targetMatches ? "Harf eşleşti"
+      : coachHint ? coachHint
       : expectedLetter === "Ğ" ? "G şeklini koru; işaret parmağını birkaç kez yukarı-aşağı oynat."
       : dynamicTarget ? "Hareketi tamamla; ardından kısa süre bekle."
       : targetMatches ? "El şeklini kısa süre koru."
@@ -655,6 +698,12 @@ export function LiveRecognition({
               <span className="pb-1 text-xs text-white/60">{pathRule ? (result.ready ? "Eşleşti" : "Kontrol ediliyor") : `%${(confidence * 100).toFixed(1)}`}</span>
             </div>
           </div>
+        )}
+
+        {running && coachHint && !result.ready && (
+          <p role="status" className="absolute inset-x-4 bottom-[84px] mx-auto w-fit max-w-[calc(100%-2rem)] rounded-full border border-amber-300/30 bg-black/70 px-4 py-2 text-center text-xs font-medium text-amber-100 backdrop-blur">
+            {coachHint}
+          </p>
         )}
 
         {running && (

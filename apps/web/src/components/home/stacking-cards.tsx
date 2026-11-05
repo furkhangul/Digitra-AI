@@ -29,8 +29,8 @@ const CARDS = [
     fg: "#1a1140",
   },
   {
-    title: "Sırada: Sana Özel Rehberlik",
-    body: "Digitra’yı, el konumuna ve hareket yönüne göre kişisel öneriler sunan bir 3D eğitmene dönüştürmeyi hedefliyoruz. “İki elini yaklaştır” gibi düzeltmeler bu geliştirme hedefinin parçası; henüz kullanıma açık değil.",
+    title: "Sana Özel Rehberlik",
+    body: "Kamera açıkken Digitra el konumunu izler: “Elini kameraya yaklaştır”, “İki elini birbirine yaklaştır” gibi düzeltmeleri anında gösterir. Testte ve canlı atölyede zorlandığın harfleri hatırlar, 3D eğitimde önce onları önerir.",
     icon: PersonStanding,
     bg: "linear-gradient(135deg, #f5a524 0%, #ffc866 100%)",
     fg: "#2b1a00",

@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { ArrowRight, Mic, ShieldCheck, Sparkles } from "lucide-react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { Mic, ShieldCheck } from "lucide-react";
 import { LiveRecognition } from "@/components/home/live-recognition";
+import { SpeechToSign, type SpellRequest } from "@/components/home/speech-to-sign";
+import { onCommand } from "@/lib/assistant-bus";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
@@ -17,8 +19,41 @@ const LIVE_STEPS = [
   ["Devam et", "Yeni harf için ellerini kısa süre indir. Metnini istersen seslendir."],
 ];
 
+const noopSubscribe = () => () => {};
+function readLinkedWord() {
+  return new URLSearchParams(window.location.search).get("isaret")?.slice(0, 80) || null;
+}
+
 export function Ceviri() {
   const [direction, setDirection] = useState<Direction>("hand-to-text");
+  const [spellRequest, setSpellRequest] = useState<SpellRequest | null>(null);
+  const [autoStartCamera, setAutoStartCamera] = useState(false);
+
+  useEffect(() => onCommand((command) => {
+    if (command.type === "spell") {
+      setDirection("speech-to-sign");
+      setSpellRequest({ text: command.text, nonce: Date.now() });
+    } else if (command.type === "camera" && command.on) {
+      // A mounted LiveRecognition answers the command itself; when the other
+      // tab is open, switch back and let the new instance start on mount.
+      setDirection((current) => {
+        if (current !== "hand-to-text") setAutoStartCamera(true);
+        return "hand-to-text";
+      });
+    }
+  }), []);
+
+  // The assistant links here as /?isaret=<kelime>#ceviri from other pages.
+  const linkedWord = useSyncExternalStore(noopSubscribe, readLinkedWord, () => null);
+  const [consumedWord, setConsumedWord] = useState<string | null>(null);
+  if (linkedWord && linkedWord !== consumedWord) {
+    setConsumedWord(linkedWord);
+    setDirection("speech-to-sign");
+    setSpellRequest({ text: linkedWord, nonce: 0 });
+  }
+  useEffect(() => {
+    if (consumedWord) window.history.replaceState(null, "", `${window.location.pathname}${window.location.hash}`);
+  }, [consumedWord]);
 
   return (
     <section id="ceviri" className="mesh-bg relative overflow-hidden py-24 sm:py-32">
@@ -54,7 +89,7 @@ export function Ceviri() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setDirection("speech-to-sign")}
+                  onClick={() => { setAutoStartCamera(false); setDirection("speech-to-sign"); }}
                   className={cn(
                     "cursor-pointer rounded-full px-4 py-2 text-sm font-medium transition",
                     direction === "speech-to-sign" ? "text-white shadow" : "text-muted hover:text-foreground",
@@ -85,11 +120,15 @@ export function Ceviri() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <Mic size={20} />
                 </div>
-                <h3 className="mt-4 font-semibold">Ses → işaret: geliştirme hedefi</h3>
+                <h3 className="mt-4 font-semibold">Söyle ya da yaz, eller hecelesin</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  Konuşmayı TİD anlatımına dönüştürmek için dil eşlemesi ve
-                  doğrulanmış avatar hareketleri üzerinde çalışılması gerekiyor.
-                  Bu özellik henüz kullanıma açık değil.
+                  Kelimeyi mikrofona söyle ya da yaz. 3D eller onu TİD parmak alfabesiyle
+                  harf harf gösterir. Bir harfe dokunarak ona dönebilir, hızı düşürebilirsin.
+                </p>
+                <p className="mt-3 text-xs leading-relaxed text-muted">
+                  TİD&apos;in kendi dilbilgisi, yüz ifadeleri ve beden hareketleri vardır.
+                  Tam cümle çevirisi dil uzmanlarıyla doğrulanmış bir akış gerektirdiğinden
+                  bu bölüm şimdilik hecelemeyle sınırlı.
                 </p>
               </div>
             )}
@@ -107,27 +146,9 @@ export function Ceviri() {
 
           <Reveal delay={0.08}>
             {direction === "hand-to-text" ? (
-              <LiveRecognition apiBase={TID_API_BASE} modelName={TID_MODEL_NAME} />
+              <LiveRecognition apiBase={TID_API_BASE} modelName={TID_MODEL_NAME} autoStart={autoStartCamera} />
             ) : (
-              <div className="flex min-h-[560px] flex-col items-center justify-center rounded-3xl border border-border bg-surface p-8 text-center shadow-[var(--shadow-soft)]">
-                <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                  <Sparkles size={26} />
-                </span>
-                <p className="mt-6 text-xs font-medium uppercase tracking-[0.18em] text-primary">
-                  Araştırma aşamasında
-                </p>
-                <h3 className="mt-3 max-w-md text-2xl font-semibold">
-                  Hedefimiz, konuşmadan işaret diline bir köprü kurmak.
-                </h3>
-                <p className="mt-4 max-w-lg leading-relaxed text-muted">
-                  TİD&apos;in kendine özgü dil yapısı, yüz ifadeleri ve beden hareketleri var.
-                  Bu özellik, dil uzmanlarıyla doğrulanmış bir çeviri akışı gerektiriyor.
-                  Bugün 3D eğitim bölümünde parmak alfabesini keşfedebilirsin.
-                </p>
-                <a href="#architecture" className="mt-7 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
-                  Tanıma teknolojisini incele <ArrowRight size={15} />
-                </a>
-              </div>
+              <SpeechToSign request={spellRequest} />
             )}
           </Reveal>
         </div>

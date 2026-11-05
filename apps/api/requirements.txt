@@ -9,3 +9,4 @@ scikit-learn>=1.5,<2
 Pillow>=10.4,<13
 torch>=2.6,<2.7
 torchvision>=0.21,<0.22
+anthropic>=1,<2

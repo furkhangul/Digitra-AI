@@ -96,12 +96,37 @@ class TTSRequest(BaseModel):
 
 
 class FeedbackRequest(BaseModel):
-    predicted_label: str | None = None
-    correct_label: str | None = None
-    model_version: str
+    predicted_label: str | None = Field(default=None, max_length=8)
+    correct_label: str | None = Field(default=None, max_length=8)
+    model_version: str = Field(max_length=64)
     consented_sample: bool = False
+    source: str = Field(default="web", max_length=32)
 
 
 class FeedbackResponse(BaseModel):
     received: bool = True
     queued_for_review: bool = False
+
+
+class AssistantTurn(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(max_length=2_000)
+
+
+class AssistantRequest(BaseModel):
+    message: str = Field(min_length=1, max_length=1_000)
+    history: list[AssistantTurn] = Field(default_factory=list, max_length=16)
+    section: str | None = Field(default=None, max_length=32)
+    recognized_text: str | None = Field(default=None, max_length=500)
+
+
+class AssistantAction(BaseModel):
+    type: Literal["navigate", "spell", "camera_on", "camera_off", "quiz", "open_live_training"]
+    target: str = ""
+    text: str = ""
+
+
+class AssistantResponse(BaseModel):
+    reply: str
+    action: AssistantAction | None = None
+    provider: str

@@ -3,11 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, BookOpen, Camera, Check, Hand, Pause, Play, RotateCcw, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Camera, Check, Hand, Pause, Play, RotateCcw, Sparkles, Trophy } from "lucide-react";
 import { Container, Section } from "@/components/ui/container";
 import { TID_ALPHABET, TID_G_SOURCE, TID_SOFT_G_SOURCE, TID_SOURCE } from "@/components/tid/poses";
 import { cn } from "@/lib/utils";
 import { LiveRecognition } from "@/components/home/live-recognition";
+import { TID_API_BASE, TID_MODEL_NAME } from "@/lib/recognition-config";
+import { onCommand } from "@/lib/assistant-bus";
+import { progressSummary, recommendLetters, recordAttempt, resetProgress, useLearningProgress } from "@/lib/learning-progress";
 
 const HandScene = dynamic(() => import("@/components/tid/hand-scene"), { ssr: false, loading: () => <div className="absolute inset-0 flex items-center justify-center text-sm text-white/60">Eller hazırlanıyor…</div> });
 function quizOptions(index: number) {
@@ -92,8 +95,35 @@ function WordPractice({
       </div>
 
       <div className="min-w-0 p-3 sm:p-5">
-        <LiveRecognition apiBase="http://127.0.0.1:8006" modelName="TİD V6" onConfirmedLetter={onLetter} />
+        <LiveRecognition apiBase={TID_API_BASE} modelName={TID_MODEL_NAME} onConfirmedLetter={onLetter} />
       </div>
+    </div>
+  );
+}
+
+function PersonalPlan({ onPick }: { onPick: (letter: string) => void }) {
+  const progress = useLearningProgress();
+  const suggestions = recommendLetters(progress);
+  const summary = progressSummary(progress);
+  return (
+    <div className="mt-6 rounded-2xl border border-primary/20 bg-primary/5 p-4">
+      <div className="flex items-center justify-between gap-2">
+        <p className="flex items-center gap-1.5 text-xs font-semibold text-primary"><Sparkles size={13} /> Sana özel</p>
+        <span className="text-[11px] text-muted">{summary.mastered}/{summary.total} harf oturdu</span>
+      </div>
+      <div className="mt-3 flex gap-2">
+        {suggestions.map((item) => (
+          <button key={item.letter} type="button" onClick={() => onPick(item.letter)} aria-label={`${item.letter} harfini çalış: ${item.reason}`}
+            className="flex flex-1 cursor-pointer flex-col items-center rounded-xl border border-border bg-surface px-2 py-2 transition-colors hover:border-primary/40">
+            <span className="text-lg font-semibold">{item.letter}</span>
+            <span className="text-[10px] leading-tight text-muted">{item.reason}</span>
+          </button>
+        ))}
+      </div>
+      <p className="mt-3 text-[11px] leading-relaxed text-muted">
+        {summary.practised ? "Testteki ve canlı atölyedeki sonuçlarına göre seçildi." : "Kendini dene ya da canlı atölyede çalıştıkça öneriler kişiselleşir."}
+        {summary.practised > 0 && <> <button type="button" onClick={resetProgress} className="cursor-pointer underline-offset-2 hover:text-foreground hover:underline">Sıfırla</button></>}
+      </p>
     </div>
   );
 }
@@ -135,6 +165,12 @@ export function Egitim({ debug = false }: { debug?: boolean }) {
     const index = (selected+1+Math.floor(Math.random()*(TID_ALPHABET.length-1)))%TID_ALPHABET.length;
     choose(index); setOptions(quizOptions(index));
   };
+  const nextQuestionRef = useRef(nextQuestion);
+  useEffect(() => { nextQuestionRef.current = nextQuestion; });
+  useEffect(() => onCommand((command) => {
+    if (command.type !== "quiz") return;
+    setMode("quiz"); setAuto(false); nextQuestionRef.current();
+  }), []);
 
   const resetWord = () => {
     if (wordTimerRef.current !== null) {
@@ -219,10 +255,11 @@ export function Egitim({ debug = false }: { debug?: boolean }) {
           <div className="mb-5 flex items-center justify-between"><h3 className="text-sm font-semibold">Alfabeyi keşfet</h3><span className="text-xs text-muted">29 harf</span></div>
           <div className="grid grid-cols-6 gap-2 lg:grid-cols-5" aria-label="TİD alfabesi">{TID_ALPHABET.map((l,i)=><button key={l.ch} type="button" aria-label={`${l.ch} harfini göster`} aria-pressed={selected===i} onClick={()=>{setAuto(false);choose(i);}} className={cn("relative flex aspect-square cursor-pointer items-center justify-center rounded-xl border text-base font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",selected===i ? "border-primary bg-primary text-white shadow-[0_4px_14px_#6d5bff35]" : "border-border bg-surface hover:border-primary/40 hover:bg-primary/5")}>{l.ch}{l.motion && <span className={cn("absolute bottom-1.5 h-1 w-1 rounded-full",selected===i?"bg-white/60":"bg-primary/50")} />}</button>)}</div>
           <div className="mt-5 flex items-center justify-between text-xs text-muted"><span className="flex items-center gap-1.5"><span className="h-1 w-1 rounded-full bg-primary/50" /> Hareketli gösterim</span><a href={sourceHref} target="_blank" rel="noreferrer" className="hover:text-primary">Kaynak ↗</a></div>
+          <PersonalPlan onPick={(letter)=>{setAuto(false);const index=TID_ALPHABET.findIndex(l=>l.ch===letter);if(index>=0)choose(index);}} />
           <div className="mt-auto pt-7"><button type="button" aria-pressed={auto} onClick={()=>{setAuto(v=>!v);setPlaying(true);}} className={cn("flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl border py-3 text-sm",auto?"border-primary/25 bg-primary/10 text-primary":"border-border bg-surface-2 text-foreground")}><Play size={14}/>{auto?"Sırayla oynatılıyor":"Alfabeyi sırayla oynat"}</button><div className="mt-3 flex items-center justify-between"><button type="button" aria-label="Önceki harf" onClick={()=>{setAuto(false);choose(selected-1);}} className="flex cursor-pointer items-center gap-2 py-2 text-xs text-muted hover:text-foreground"><ArrowLeft size={14}/> Önceki</button><button type="button" aria-label="Sonraki harf" onClick={()=>{setAuto(false);choose(selected+1);}} className="flex cursor-pointer items-center gap-2 py-2 text-xs text-muted hover:text-foreground">Sonraki <ArrowRight size={14}/></button></div></div>
         </> : <>
           <p className="text-xs uppercase tracking-widest text-muted">Kendini dene</p><p className="mt-3 text-4xl font-semibold">{score}<span className="text-lg font-normal text-muted"> / {asked}</span></p><p className="mt-2 text-sm text-muted">doğru yanıt</p>
-          <div className="mt-7 grid grid-cols-2 gap-3">{options.map(i=><button key={i} type="button" disabled={picked!==null} onClick={()=>{setPicked(i);setAsked(n=>n+1);if(i===selected)setScore(n=>n+1);}} className={cn("flex h-20 cursor-pointer items-center justify-center rounded-2xl border text-2xl font-semibold",picked!==null&&i===selected?"border-success bg-success/10 text-success":picked===i?"border-danger bg-danger/10 text-danger":"border-border hover:bg-surface-2")}>{TID_ALPHABET[i].ch}{picked!==null&&i===selected&&<Check className="ml-2" size={18}/>}</button>)}</div>
+          <div className="mt-7 grid grid-cols-2 gap-3">{options.map(i=><button key={i} type="button" disabled={picked!==null} onClick={()=>{setPicked(i);setAsked(n=>n+1);if(i===selected)setScore(n=>n+1);recordAttempt(active.ch,i===selected);}} className={cn("flex h-20 cursor-pointer items-center justify-center rounded-2xl border text-2xl font-semibold",picked!==null&&i===selected?"border-success bg-success/10 text-success":picked===i?"border-danger bg-danger/10 text-danger":"border-border hover:bg-surface-2")}>{TID_ALPHABET[i].ch}{picked!==null&&i===selected&&<Check className="ml-2" size={18}/>}</button>)}</div>
           <div aria-live="polite" className="mt-5 text-sm">{picked!==null&&(picked===selected?"Doğru bildin.":`Bu hareket ${active.ch} harfini gösteriyor.`)}</div>
           {picked!==null&&<button type="button" onClick={nextQuestion} className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm text-white">Sonraki soru <ArrowRight size={15}/></button>}
           <button type="button" onClick={()=>{setAsked(0);setScore(0);nextQuestion();}} className="mt-auto cursor-pointer pt-6 text-xs text-muted">Skoru sıfırla</button>

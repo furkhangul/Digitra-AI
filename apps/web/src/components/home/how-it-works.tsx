@@ -89,10 +89,11 @@ export function HowItWorks() {
           </article>
 
           <article className={styles.futureCard}>
-            <div className={styles.cardTop}><span className={styles.kicker}>05 / Sırada ne var?</span><span className={styles.futureBadge}>Geliştirme hedefi</span></div>
+            <div className={styles.cardTop}><span className={styles.kicker}>05 / Sana özel</span><span className={styles.futureBadge}>Yeni</span></div>
             <h3>Sana özel<br />bir yol gösterici.</h3>
-            <p>Bir sonraki hedefimiz, el konumuna ve hareketine göre kişisel düzeltmeler sunan bir 3D eğitmen.</p>
-            <div className={styles.futureNote}><span className={styles.futureMark} aria-hidden>↗</span><span>Daha kişisel bir öğrenme deneyimi.<small>Bu özellik henüz kullanıma açık değil.</small></span></div>
+            <p>Kamera el konumunu izler ve anında düzeltir. Zorlandığın harfleri hatırlar, çalışmanı onlara göre önerir.</p>
+            <div className={styles.futureNote}><span className={styles.futureMark} aria-hidden>↗</span><span>“İki elini birbirine yaklaştır.”<small>Canlı el konumu ipuçları · kişisel harf önerileri</small></span></div>
+            <a href="#egitim" className={styles.textLink}>Önerilerini gör <MoveRight size={17} aria-hidden /></a>
           </article>
         </Reveal>
       </Container>

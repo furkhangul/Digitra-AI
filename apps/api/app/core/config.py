@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     app_name: str = "Digitra API"
     environment: str = "development"
 
-    cors_allow_origins: list[str] = ["http://localhost:3000"]
+    cors_allow_origins: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
 
     rate_limit_per_minute: int = 60
 
@@ -28,6 +28,9 @@ class Settings(BaseSettings):
     cloud_stt_api_key: str | None = None
     cloud_tts_api_key: str | None = None
     llm_api_key: str | None = None
+
+    # Label-only correction queue for human review (never raw images).
+    feedback_queue_path: str = "data/feedback/review-queue.jsonl"
 
 
 @lru_cache

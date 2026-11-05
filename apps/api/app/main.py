@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
-from app.routers import feedback, health, models, predict, recognition, speech
+from app.routers import assistant, feedback, health, models, predict, recognition, speech
 
 settings = get_settings()
 
@@ -36,3 +36,4 @@ app.include_router(predict.router)
 app.include_router(recognition.router)
 app.include_router(speech.router)
 app.include_router(feedback.router)
+app.include_router(assistant.router)

@@ -1,7 +1,0 @@
-.venv/
-data/
-artifacts/features/
-artifacts/models/
-artifacts/reports/*.png
-__pycache__/
-*.pyc

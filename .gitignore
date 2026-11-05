@@ -1,32 +1,35 @@
-# Secrets
-.env
-.env.local
-.env.*.local
-credentials*
-*.key
-*.pem
+# OS
+.DS_Store
+Thumbs.db
 
-# Node
+# Node / Next.js
 node_modules/
 .next/
 out/
-apps/web/.next/
-apps/web/node_modules/
-npm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
 
 # Python
 __pycache__/
-*.pyc
-.venv/
-apps/api/.venv/
-apps/api/.venv-digitra/
+*.py[cod]
+.venv*/
+venv/
 .pytest_cache/
 
-# Large / regenerable tool caches (push dışı)
-ml/notebooks/.ipynb_checkpoints/
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
 
-# OS / editor
-.DS_Store
-Thumbs.db
+# Runtime output & local experiments
+output/
+artifacts/
+tmp/
+
+# Editor / tool-generated agent files
+apps/web/CLAUDE.md
+apps/web/AGENTS.md
+.claude/
 .vscode/
 .idea/
